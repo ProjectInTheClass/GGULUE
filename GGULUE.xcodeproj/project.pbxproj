@@ -24,6 +24,7 @@
 		15D530742108E33500090039 /* LectureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D530732108E33500090039 /* LectureListViewController.swift */; };
 		15D530762108E34900090039 /* ValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D530752108E34900090039 /* ValueManager.swift */; };
 		15D530782108FD4700090039 /* LectureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D530772108FD4700090039 /* LectureDetailViewController.swift */; };
+		15E780822111A46A002C76C6 /* AllLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E780812111A46A002C76C6 /* AllLectureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		15D530732108E33500090039 /* LectureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureListViewController.swift; sourceTree = "<group>"; };
 		15D530752108E34900090039 /* ValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueManager.swift; sourceTree = "<group>"; };
 		15D530772108FD4700090039 /* LectureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureDetailViewController.swift; sourceTree = "<group>"; };
+		15E780812111A46A002C76C6 /* AllLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLectureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				159C9DC3210F8629007E808C /* algorithmStoryboard.storyboard */,
 				159C9DBF210F7CA8007E808C /* FavoriteStoryboard.storyboard */,
 				159C9DBD210F7883007E808C /* LectureListStoryboard.storyboard */,
+				15E780812111A46A002C76C6 /* AllLectureViewController.swift */,
 				15A14454210FA781000CE2F9 /* TimeTableViewController.swift */,
 				159C9DC5210F86A9007E808C /* algorithmViewController.swift */,
 				159C9DC1210F7D25007E808C /* FavoriteListViewController.swift */,
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				159C9DC6210F86A9007E808C /* algorithmViewController.swift in Sources */,
+				15E780822111A46A002C76C6 /* AllLectureViewController.swift in Sources */,
 				15D530782108FD4700090039 /* LectureDetailViewController.swift in Sources */,
 				15D530742108E33500090039 /* LectureListViewController.swift in Sources */,
 				159C9DC2210F7D25007E808C /* FavoriteListViewController.swift in Sources */,

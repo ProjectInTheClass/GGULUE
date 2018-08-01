@@ -10,6 +10,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--All Lecture View Controller-->
+        <scene sceneID="Mo5-Xr-evw">
+            <objects>
+                <viewController id="azb-5C-aqT" customClass="AllLectureViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fry-xC-Wap">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mCm-q6-SpH">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="r19-YR-tUi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="FNv-fu-nvf"/>
+                                    </constraints>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="azb-5C-aqT" id="1D9-B9-ely"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllLectureCell" textLabel="d45-I3-Sbv" detailTextLabel="5V7-zE-1QT" style="IBUITableViewCellStyleValue1" id="zzo-8a-gAh">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zzo-8a-gAh" id="ZfW-TE-SAb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d45-I3-Sbv">
+                                                    <rect key="frame" x="20.000000000000004" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5V7-zE-1QT">
+                                                    <rect key="frame" x="350" y="11.999999999999998" width="44" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="azb-5C-aqT" id="h0u-6d-nxg"/>
+                                    <outlet property="delegate" destination="azb-5C-aqT" id="rYr-7R-ogN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mCm-q6-SpH" firstAttribute="top" secondItem="0uf-Pr-IJA" secondAttribute="top" id="0rF-SU-goT"/>
+                            <constraint firstItem="0uf-Pr-IJA" firstAttribute="bottom" secondItem="mCm-q6-SpH" secondAttribute="bottom" constant="49" id="24V-bb-okJ"/>
+                            <constraint firstItem="mCm-q6-SpH" firstAttribute="leading" secondItem="fry-xC-Wap" secondAttribute="leading" id="TOm-Gy-AhO"/>
+                            <constraint firstAttribute="trailing" secondItem="mCm-q6-SpH" secondAttribute="trailing" id="pIu-Nb-tdV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0uf-Pr-IJA"/>
+                    </view>
+                    <connections>
+                        <outlet property="allLectureSearchBar" destination="r19-YR-tUi" id="Iuv-Ug-HcE"/>
+                        <outlet property="allLectureTable" destination="mCm-q6-SpH" id="Xs4-1c-l1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXj-Fr-eTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489.8550724637682" y="-564.13043478260875"/>
+        </scene>
         <!--Lecture List View Controller-->
         <scene sceneID="ak0-UX-xWf">
             <objects>
@@ -19,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Tj-sRM">
-                                <rect key="frame" x="0.0" y="173" width="414" height="514"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="558"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LectureCell" textLabel="tXw-Q2-dJQ" detailTextLabel="5We-FV-Bp9" style="IBUITableViewCellStyleValue1" id="Ugi-Yq-Iwf">
@@ -55,7 +127,7 @@
                                 </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ftQ-1Q-vgB">
-                                <rect key="frame" x="0.0" y="128" width="414" height="42"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="42"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-1x-O70">
                                         <rect key="frame" x="0.0" y="0.0" width="207" height="42"/>
@@ -83,12 +155,18 @@
                             <constraint firstItem="30r-EC-VGR" firstAttribute="trailing" secondItem="ftQ-1Q-vgB" secondAttribute="trailing" id="E3G-UB-aY7"/>
                             <constraint firstItem="30r-EC-VGR" firstAttribute="bottom" secondItem="WeC-Tj-sRM" secondAttribute="bottom" constant="49" id="Ja4-bB-UHa"/>
                             <constraint firstItem="WeC-Tj-sRM" firstAttribute="top" secondItem="ftQ-1Q-vgB" secondAttribute="bottom" constant="3" id="XGh-59-odh"/>
-                            <constraint firstItem="ftQ-1Q-vgB" firstAttribute="top" secondItem="30r-EC-VGR" secondAttribute="top" constant="64" id="ZhK-ce-l73"/>
+                            <constraint firstItem="ftQ-1Q-vgB" firstAttribute="top" secondItem="30r-EC-VGR" secondAttribute="top" constant="20" id="ZhK-ce-l73"/>
                             <constraint firstItem="ftQ-1Q-vgB" firstAttribute="trailing" secondItem="WeC-Tj-sRM" secondAttribute="trailing" id="vXB-qs-2QJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="30r-EC-VGR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GyM-Og-2A1"/>
+                    <navigationItem key="navigationItem" id="GyM-Og-2A1">
+                        <barButtonItem key="rightBarButtonItem" title="전체강의검색" id="UxA-A9-RCa">
+                            <connections>
+                                <segue destination="azb-5C-aqT" kind="show" id="ofz-Xj-RZP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="badLectureButton" destination="aeG-08-D2V" id="dS9-Hz-ET7"/>
                         <outlet property="goodLectureButton" destination="5YI-1x-O70" id="Rs6-JR-1EI"/>

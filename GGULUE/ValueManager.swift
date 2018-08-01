@@ -148,6 +148,8 @@ var lec_6 = Lecture(star_score: 2.69, attendance_score: 2.5, grade_score: 4, lev
 
 //강의를 저장할 배열
 var lectureArray : [Lecture] = [lec_1, lec_2, lec_3, lec_4, lec_5, lec_6]
+var allLectureArray : [Lecture] = [lec_1, lec_2, lec_3, lec_4, lec_5, lec_6]
+
 var dayOfWeek = ["월" : 1, "화" : 2, "수" : 3, "목" : 4, "금" : 5]
 var tableLectureArray : [Lecture] = []
 var favoriteLectureArray : [Lecture] = []
