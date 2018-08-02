@@ -28,6 +28,12 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
         cell.detailTextLabel?.text = "\(round(filteredArray[indexPath.row].self_score*100)/100)"
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = allLectureTable.indexPathForSelectedRow, let LDVC = segue.destination as? LectureDetailViewController{
+            let selectedLecture = filteredArray[indexPath.row]
+            LDVC.selectedLecture = selectedLecture
+        }
+    }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredArray = searchText.isEmpty ? data : data.filter({(dataLecture:Lecture)->Bool in
             return dataLecture.lec_name.range(of : searchText, options: .caseInsensitive) != nil
@@ -57,7 +63,7 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
         
         present(refreshAlert, animated: true, completion: nil)
     }
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

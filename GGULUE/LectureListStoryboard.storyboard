@@ -56,6 +56,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kte-8z-507" kind="show" id="p4n-o9-eZu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -297,22 +300,13 @@
                                     <constraint firstAttribute="trailing" secondItem="VJq-Ds-Rfq" secondAttribute="trailing" id="rVe-52-Bhf"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwX-fE-l0f">
-                                <rect key="frame" x="73" y="589" width="95" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGx-1O-ydl">
+                                <rect key="frame" x="86" y="551" width="242" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="강의추가"/>
+                                <state key="normal" title="Button" image="btn_like_default"/>
+                                <state key="selected" image="btn_like_selected"/>
                                 <connections>
-                                    <action selector="addLecture:" destination="kte-8z-507" eventType="touchUpInside" id="Ea8-ul-TDA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usu-QA-mNq">
-                                <rect key="frame" x="251" y="589" width="95" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="강의제거"/>
-                                <connections>
-                                    <action selector="removeLecture:" destination="kte-8z-507" eventType="touchUpInside" id="d22-1P-5cM"/>
+                                    <action selector="handleAdd:" destination="kte-8z-507" eventType="touchUpInside" id="zrg-Gw-VSe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -325,6 +319,7 @@
                         <viewLayoutGuide key="safeArea" id="eVR-P4-vE6"/>
                     </view>
                     <connections>
+                        <outlet property="btn_addLecture" destination="iGx-1O-ydl" id="tcz-Hm-ubb"/>
                         <outlet property="lec_locationLabel" destination="iLI-ib-b0J" id="U1N-Cx-G4z"/>
                         <outlet property="lec_nameLabel" destination="6UJ-fz-b21" id="JzU-zd-faj"/>
                         <outlet property="lec_profLabel" destination="lvV-Fk-Qe6" id="pfT-pz-lYB"/>
@@ -356,4 +351,11 @@
             <point key="canvasLocation" x="632.79999999999995" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_like_default" width="640" height="320"/>
+        <image name="btn_like_selected" width="960" height="480"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="a8T-cE-v6G"/>
+    </inferredMetricsTieBreakers>
 </document>

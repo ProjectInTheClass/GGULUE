@@ -10,8 +10,6 @@ import UIKit
 
 class FavoriteListViewController: UIViewController, UITableViewDataSource {
     
-    
-    
     @IBOutlet weak var favoriteLecutureTable: UITableView!
     
     func numberOfSections(in tableView: UITableView) -> Int {

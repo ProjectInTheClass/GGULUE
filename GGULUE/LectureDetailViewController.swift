@@ -18,22 +18,8 @@ class LectureDetailViewController: UIViewController {
     @IBOutlet weak var lec_timeLabel: UILabel!
     @IBOutlet weak var lec_scoreLabel: UILabel!
     
-    @IBAction func addLecture(_ sender: Any) {
-        let valueString = selectedLecture?.lec_name
-        var valueBool : Bool = false
-        for item in confirmLectureArray{
-            if valueString == item{
-                valueBool = true
-            }
-        }
-        if valueBool{
-            print("이미 강의를 추가하셨습니다.")
-        }else{
-            favoriteLectureArray.append(selectedLecture!)
-            confirmLectureArray.append((selectedLecture?.lec_name)!)
-        }
-    }
-    @IBAction func removeLecture(_ sender: Any) {
+    @IBOutlet weak var btn_addLecture: UIButton!
+    @IBAction func handleAdd(_ sender: Any) {
         let valueString = selectedLecture?.lec_name
         var valueBool : Bool = false
         var valueInt : Int = -1
@@ -46,8 +32,11 @@ class LectureDetailViewController: UIViewController {
         if valueBool{
             favoriteLectureArray.remove(at: valueInt)
             confirmLectureArray.remove(at: valueInt)
+            btn_addLecture.isSelected = false
         }else{
-            print("강의목록에 없는 강의입니다.")
+            favoriteLectureArray.append(selectedLecture!)
+            confirmLectureArray.append((selectedLecture?.lec_name)!)
+            btn_addLecture.isSelected = true
         }
     }
     
@@ -58,6 +47,19 @@ class LectureDetailViewController: UIViewController {
         lec_locationLabel.text = selectedLecture?.lec_location
         lec_timeLabel.text = selectedLecture?.lec_time
         lec_scoreLabel.text = "\(selectedLecture?.self_score ?? 0)점"
+        let valueString = selectedLecture?.lec_name
+        var valueBool : Bool = false
+        for item in confirmLectureArray{
+            if valueString == item{
+                valueBool = true
+            }
+        }
+        if valueBool{
+            btn_addLecture.isSelected = true
+            
+        }else{
+            btn_addLecture.isSelected = false
+        }
     }
     
     override func viewDidLoad() {
