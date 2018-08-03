@@ -75,26 +75,26 @@ class TimeTableViewController: UIViewController {
         for item in viewArray{
             item.backgroundColor = UIColor.white
         }
-        for i in 0..<favoriteLectureArray.count{
-            if favoriteLectureArray[i].lec_time == "월(1) 수(1)"{
+        for i in 0..<timeTableLectureArray.count{
+            if timeTableLectureArray[i].lec_time == "월(1) 수(1)"{
                 mon1.backgroundColor = UIColor.red
                 wed1.backgroundColor = UIColor.red
-            }else if favoriteLectureArray[i].lec_time == "월(2) 수(2)"{
+            }else if timeTableLectureArray[i].lec_time == "월(2) 수(2)"{
                 mon2.backgroundColor = UIColor.blue
                 wed2.backgroundColor = UIColor.blue
-            }else if favoriteLectureArray[i].lec_time == "월(5) 수(5)"{
+            }else if timeTableLectureArray[i].lec_time == "월(5) 수(5)"{
                 mon5.backgroundColor = UIColor.brown
                 wed5.backgroundColor = UIColor.brown
-            }else if favoriteLectureArray[i].lec_time == "화(1) 목(1)"{
+            }else if timeTableLectureArray[i].lec_time == "화(1) 목(1)"{
                 tue1.backgroundColor = UIColor.black
                 thu1.backgroundColor = UIColor.black
-            }else if favoriteLectureArray[i].lec_time == "화(2) 목(2)"{
+            }else if timeTableLectureArray[i].lec_time == "화(2) 목(2)"{
                 tue2.backgroundColor = UIColor.orange
                 thu2.backgroundColor = UIColor.orange
-            }else if favoriteLectureArray[i].lec_time == "화(5) 목(5)"{
+            }else if timeTableLectureArray[i].lec_time == "화(5) 목(5)"{
                 tue5.backgroundColor = UIColor.yellow
                 thu5.backgroundColor = UIColor.yellow
-            }else if favoriteLectureArray[i].lec_time == "금(1-3)"{
+            }else if timeTableLectureArray[i].lec_time == "금(1-3)"{
                 fri1.backgroundColor = UIColor.purple
                 fri2.backgroundColor = UIColor.purple
                 fri3.backgroundColor = UIColor.purple

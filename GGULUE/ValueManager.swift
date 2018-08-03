@@ -153,7 +153,10 @@ var allLectureArray : [Lecture] = [lec_1, lec_2, lec_3, lec_4, lec_5, lec_6]
 var dayOfWeek = ["월" : 1, "화" : 2, "수" : 3, "목" : 4, "금" : 5]
 var tableLectureArray : [Lecture] = []
 var favoriteLectureArray : [Lecture] = []
-var confirmLectureArray : [String] = []
+var confirmLectureArray : [String] = []      //compare with favoriteLectureArray
+var timeTableLectureArray : [Lecture] = []
+var confirmLectureArray2 : [String] = []    //compare with timeTableLectureArray
 var rateList : [Float] = [0.2, 0.2, 0.2, 0.2, 0.2]
 var realList : [Float] = [1, 1, 1, 1, 1]
+
 

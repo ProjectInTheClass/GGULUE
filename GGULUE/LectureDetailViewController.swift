@@ -30,6 +30,18 @@ class LectureDetailViewController: UIViewController {
             }
         }
         if valueBool{
+            var deleteTimeTableBool : Bool = false
+            var intValue = -1
+            for i in 0..<confirmLectureArray2.count{
+                if confirmLectureArray2[i] == selectedLecture?.lec_name{
+                    deleteTimeTableBool = true
+                    intValue = i
+                }
+            }
+            if deleteTimeTableBool{
+                timeTableLectureArray.remove(at: intValue)
+                confirmLectureArray2.remove(at: intValue)
+            }
             favoriteLectureArray.remove(at: valueInt)
             confirmLectureArray.remove(at: valueInt)
             btn_addLecture.isSelected = false

@@ -8,7 +8,45 @@
 
 import UIKit
 
-class FavoriteListViewController: UIViewController, UITableViewDataSource {
+class FavoriteListViewController: UIViewController, UITableViewDataSource, ChangeLectureTimeTable, UITableViewDelegate {
+    func changeLecture(_ sender: UITableViewCell, _ boolValue:Bool) {
+        let indexPath = favoriteLecutureTable.indexPath(for: sender)
+        if boolValue{
+            timeTableLectureArray.append(favoriteLectureArray[(indexPath?.row)!])
+            confirmLectureArray2.append(favoriteLectureArray[(indexPath?.row)!].lec_name)
+        }else{
+            var valueBool : Bool = false
+            var intValue : Int = -1
+            for i in 0..<confirmLectureArray2.count{
+                if confirmLectureArray2[i] == favoriteLectureArray[(indexPath?.row)!].lec_name{
+                    valueBool = true
+                    intValue = i
+                }
+            }
+            if valueBool{
+                timeTableLectureArray.remove(at: intValue)
+                confirmLectureArray2.remove(at: intValue)
+            }
+        }
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        var deleteTimeTableBool : Bool = false
+        var intValue = -1
+        for i in 0..<confirmLectureArray2.count{
+            if confirmLectureArray2[i] == favoriteLectureArray[indexPath.row].lec_name{
+                deleteTimeTableBool = true
+                intValue = i
+            }
+        }
+        if deleteTimeTableBool{
+            timeTableLectureArray.remove(at: intValue)
+            confirmLectureArray2.remove(at: intValue)
+        }
+        favoriteLectureArray.remove(at: indexPath.row)
+        confirmLectureArray.remove(at: indexPath.row)
+        favoriteLecutureTable.deleteRows(at: [indexPath], with: .automatic)
+        
+    }
     
     @IBOutlet weak var favoriteLecutureTable: UITableView!
     
@@ -21,11 +59,10 @@ class FavoriteListViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteLectureCell", for: indexPath)
-        
-        cell.textLabel?.text = favoriteLectureArray[indexPath.row].lec_name
-        cell.detailTextLabel?.text = "\(favoriteLectureArray[indexPath.row].self_score)"
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteLectureCell", for: indexPath) as! FavoriteTableViewCell
+        cell.customTextLabel.text = "\(favoriteLectureArray[indexPath.row].lec_name), \(favoriteLectureArray[indexPath.row].lec_prof) 교수"
+        cell.delegate = self
+
         return cell
     }
     
@@ -34,6 +71,7 @@ class FavoriteListViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        favoriteLecutureTable.reloadData()
         
     }
 
