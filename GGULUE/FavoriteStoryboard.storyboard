@@ -13,7 +13,7 @@
         <!--Favorite List View Controller-->
         <scene sceneID="FRG-q3-G0c">
             <objects>
-                <viewController storyboardIdentifier="FavoriteList" id="VJX-kg-4yy" customClass="FavoriteListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VJX-kg-4yy" customClass="FavoriteListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sl-h7-HvF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx5-Fs-rb1">
-                                                    <rect key="frame" x="33" y="12" width="42" height="21"/>
+                                                    <rect key="frame" x="33" y="12" width="251" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -51,6 +51,7 @@
                                         <connections>
                                             <outlet property="customButton" destination="3OB-Zy-M4o" id="8fA-LW-hXG"/>
                                             <outlet property="customTextLabel" destination="Wx5-Fs-rb1" id="FDI-E1-SzJ"/>
+                                            <segue destination="rbr-6t-8bA" kind="show" id="75p-2G-4Mz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,12 +63,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rGr-2o-Db2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="ezm-eB-xi5"/>
+                    <navigationItem key="navigationItem" id="Nyz-d2-w9U"/>
                     <connections>
                         <outlet property="favoriteLecutureTable" destination="a6f-wS-7jn" id="0kv-jQ-cMS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gn-fL-fED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594.20289855072474" y="-588.58695652173913"/>
+        </scene>
+        <!--LectureDetailScene-->
+        <scene sceneID="6A2-vg-iwq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LectureListStoryboard" referencedIdentifier="LectureDetailScene" id="rbr-6t-8bA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yu6-Qm-PYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126.8115942028987" y="-640.76086956521749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lXZ-Ao-EyG">
+            <objects>
+                <navigationController storyboardIdentifier="FavoriteList" automaticallyAdjustsScrollViewInsets="NO" id="6Km-5h-1NW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="ezm-eB-xi5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tha-eF-VSF">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VJX-kg-4yy" kind="relationship" relationship="rootViewController" id="bac-rS-3rE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLA-iy-P1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-313.04347826086956" y="-588.58695652173913"/>
         </scene>

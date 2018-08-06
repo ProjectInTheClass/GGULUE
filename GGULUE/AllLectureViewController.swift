@@ -24,7 +24,7 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllLectureCell", for: indexPath)
-        cell.textLabel?.text = "\(filteredArray[indexPath.row].lec_name), \(filteredArray[indexPath.row].lec_prof) 교수"
+        cell.textLabel?.text = "\(filteredArray[indexPath.row].lec_name!), \(filteredArray[indexPath.row].lec_prof!) 교수"
         cell.detailTextLabel?.text = "\(round(filteredArray[indexPath.row].self_score*100)/100)"
         return cell
     }
@@ -36,7 +36,7 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredArray = searchText.isEmpty ? data : data.filter({(dataLecture:Lecture)->Bool in
-            return dataLecture.lec_name.range(of : searchText, options: .caseInsensitive) != nil
+            return dataLecture.lec_name?.range(of : searchText, options: .caseInsensitive) != nil
             })
         allLectureTable.reloadData()
     }

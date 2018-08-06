@@ -183,7 +183,7 @@
         <!--Lecture Detail View Controller-->
         <scene sceneID="bUX-f1-Wjq">
             <objects>
-                <viewController id="kte-8z-507" customClass="LectureDetailViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LectureDetailScene" id="kte-8z-507" customClass="LectureDetailViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qfh-Q3-3IP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

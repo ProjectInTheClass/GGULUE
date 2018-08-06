@@ -57,7 +57,7 @@ class LectureDetailViewController: UIViewController {
         lec_nameLabel.text = selectedLecture?.lec_name
         lec_profLabel.text = selectedLecture?.lec_prof
         lec_locationLabel.text = selectedLecture?.lec_location
-        lec_timeLabel.text = selectedLecture?.lec_time
+        lec_timeLabel.text = selectedLecture?.lec_time[0]!
         lec_scoreLabel.text = "\(selectedLecture?.self_score ?? 0)점"
         let valueString = selectedLecture?.lec_name
         var valueBool : Bool = false

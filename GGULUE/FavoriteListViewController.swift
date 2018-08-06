@@ -13,7 +13,7 @@ class FavoriteListViewController: UIViewController, UITableViewDataSource, Chang
         let indexPath = favoriteLecutureTable.indexPath(for: sender)
         if boolValue{
             timeTableLectureArray.append(favoriteLectureArray[(indexPath?.row)!])
-            confirmLectureArray2.append(favoriteLectureArray[(indexPath?.row)!].lec_name)
+            confirmLectureArray2.append(favoriteLectureArray[(indexPath?.row)!].lec_name!)
         }else{
             var valueBool : Bool = false
             var intValue : Int = -1
@@ -60,7 +60,7 @@ class FavoriteListViewController: UIViewController, UITableViewDataSource, Chang
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteLectureCell", for: indexPath) as! FavoriteTableViewCell
-        cell.customTextLabel.text = "\(favoriteLectureArray[indexPath.row].lec_name), \(favoriteLectureArray[indexPath.row].lec_prof) 교수"
+        cell.customTextLabel.text = "\(favoriteLectureArray[indexPath.row].lec_name!), \(favoriteLectureArray[indexPath.row].lec_prof!) 교수"
         cell.delegate = self
 
         return cell
@@ -82,7 +82,12 @@ class FavoriteListViewController: UIViewController, UITableViewDataSource, Chang
     override func viewWillAppear(_ animated: Bool) {
         favoriteLecutureTable.reloadData()
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = favoriteLecutureTable.indexPathForSelectedRow, let LDVC = segue.destination as? LectureDetailViewController{
+            let selectedLecture = favoriteLectureArray[indexPath.row]
+            LDVC.selectedLecture = selectedLecture
+        }
+    }
 
     /*
     // MARK: - Navigation

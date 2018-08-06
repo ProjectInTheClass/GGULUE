@@ -37,7 +37,7 @@ class LectureListViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LectureCell", for: indexPath)
         
-        cell.textLabel?.text = "\(indexPath.row+1) 위   \(tableLectureArray[indexPath.row].lec_name), \(tableLectureArray[indexPath.row].lec_prof) 교수"
+        cell.textLabel?.text = "\(indexPath.row+1) 위   \(tableLectureArray[indexPath.row].lec_name!), \(tableLectureArray[indexPath.row].lec_prof!) 교수"
         cell.detailTextLabel?.text = "\(round(tableLectureArray[indexPath.row].self_score*100)/100)"
         
         return cell
