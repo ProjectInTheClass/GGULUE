@@ -310,3 +310,48 @@ var rateList : [Float] = [0.2, 0.2, 0.2, 0.2, 0.2]
 var realList : [Float] = [1, 1, 1, 1, 1]
 
 
+
+
+//string타입의 시간정보를 int타입으로 변경
+func convertTimeInfo(_ timeList:[String]) -> [Int]{
+    var newArray : [Int] = []
+    var timeArray : [[String]] = []
+    for i in 0..<timeList.count{
+        timeArray.append(timeList[i].components(separatedBy: "(").map{$0.trimmingCharacters(in: [")"])})
+    }
+    for i in 0..<timeArray.count{
+        var timeInfo = 0
+        switch timeArray[i][0]{
+        case "월":
+            timeInfo += 10
+        case "화":
+            timeInfo += 20
+        case "수":
+            timeInfo += 30
+        case "목":
+            timeInfo += 40
+        case "금":
+            timeInfo += 50
+        default:
+            timeInfo = 0
+        }
+        if let intValue = Int(timeArray[i][1]){
+            timeInfo += intValue
+            newArray.append(timeInfo)
+        }else{
+            var tempArray : [String]
+            tempArray = timeArray[i][1].components(separatedBy: "-")
+            var tempArray2 : [Int] = []
+            for i in Int(tempArray[0])!..<(Int(tempArray[1])!+1){
+                let timeInfo2 = timeInfo + i
+                tempArray2.append(timeInfo2)
+            }
+            for item in tempArray2{
+                newArray.append(item)
+            }
+        }
+    }
+    return newArray
+}
+
+
