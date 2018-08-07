@@ -35,7 +35,7 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filteredArray = searchText.isEmpty ? data : data.filter({(dataLecture:Lecture)->Bool in
+        filteredArray = searchText.isEmpty ? [] : data.filter({(dataLecture:Lecture)->Bool in
             return dataLecture.lec_name?.range(of : searchText, options: .caseInsensitive) != nil
             })
         allLectureTable.reloadData()
@@ -48,21 +48,6 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
         self.allLectureSearchBar.text = ""
         self.allLectureSearchBar.resignFirstResponder()
     }
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("search text: ", self.allLectureSearchBar.text!)
-        
-        let refreshAlert = UIAlertController(title: "검색결과", message: self.allLectureSearchBar.text!, preferredStyle: UIAlertControllerStyle.alert)
-        
-        refreshAlert.addAction(UIAlertAction(title: "확인", style: .default, handler: {(action:UIAlertAction!) in
-            print("검색확인")
-            
-            self.allLectureSearchBar.showsCancelButton = false
-            self.allLectureSearchBar.text = ""
-            self.allLectureSearchBar.resignFirstResponder()
-        }))
-        
-        present(refreshAlert, animated: true, completion: nil)
-    }
 
     
     override func viewDidLoad() {
@@ -71,7 +56,7 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
         self.allLectureSearchBar.placeholder = "강의이름을 검색하세요"
         self.allLectureTable.dataSource = self
         self.allLectureTable.delegate = self
-        self.filteredArray = self.data
+        self.filteredArray = []
         
 
         // Do any additional setup after loading the view.
