@@ -85,7 +85,11 @@
             </objects>
             <point key="canvasLocation" x="1489.8550724637682" y="-564.13043478260875"/>
         </scene>
+<<<<<<< HEAD
+        <!--꿀루-->
+=======
         <!--Lecture List View Controller-->
+>>>>>>> 0ca2dd55a9e1acd7be2c469d2d5423f254125090
         <scene sceneID="ak0-UX-xWf">
             <objects>
                 <viewController id="8Ox-C7-Rd0" customClass="LectureListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,8 +167,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="30r-EC-VGR"/>
                     </view>
+<<<<<<< HEAD
+                    <navigationItem key="navigationItem" title="꿀루" id="GyM-Og-2A1">
+                        <barButtonItem key="rightBarButtonItem" title="전체 강의" id="UxA-A9-RCa">
+=======
                     <navigationItem key="navigationItem" id="GyM-Og-2A1">
                         <barButtonItem key="rightBarButtonItem" title="전체강의검색" id="UxA-A9-RCa">
+>>>>>>> 0ca2dd55a9e1acd7be2c469d2d5423f254125090
                             <connections>
                                 <segue destination="azb-5C-aqT" kind="show" id="ofz-Xj-RZP"/>
                             </connections>
