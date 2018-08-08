@@ -57,8 +57,21 @@ class LectureDetailViewController: UIViewController {
         lec_nameLabel.text = selectedLecture?.lec_name
         lec_profLabel.text = selectedLecture?.lec_prof
         lec_locationLabel.text = selectedLecture?.lec_location
-        lec_timeLabel.text = selectedLecture?.lec_time[0]!
-        lec_scoreLabel.text = "\(selectedLecture?.self_score ?? 0)점"
+        if selectedLecture?.lec_time.count == 0{
+            lec_timeLabel.text = "강의시간 정보가 없습니다."
+        }else{
+            var tempString = ""
+            for i in (selectedLecture?.lec_time)!{
+                tempString += "\(i!) "
+            }
+            lec_timeLabel.text = tempString
+        }
+        if selectedLecture?.self_score == -1{
+            lec_scoreLabel.text = "강의평가 정보가 없습니다."
+        }else{
+            lec_scoreLabel.text = "\(selectedLecture?.self_score ?? 0)점"
+            
+        }
         let valueString = selectedLecture?.lec_name
         var valueBool : Bool = false
         for item in confirmLectureArray{

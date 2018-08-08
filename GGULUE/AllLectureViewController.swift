@@ -25,7 +25,11 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllLectureCell", for: indexPath)
         cell.textLabel?.text = "\(filteredArray[indexPath.row].lec_name!), \(filteredArray[indexPath.row].lec_prof!) 교수"
-        cell.detailTextLabel?.text = "\(round(filteredArray[indexPath.row].self_score*100)/100)"
+        if filteredArray[indexPath.row].self_score == -1{
+            cell.detailTextLabel?.text = "평가없음"
+        }else{
+            cell.detailTextLabel?.text = "\(round(filteredArray[indexPath.row].self_score*100)/100)"
+        }
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

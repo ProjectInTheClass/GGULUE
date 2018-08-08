@@ -7,7 +7,18 @@
 //
 import UIKit
 class TimeTableViewController: UIViewController {
-    var ColorArray : [UIColor] = [UIColor(red: 245/255, green: 197/255, blue: 202/255, alpha: 1), UIColor(red: 241/255, green: 169/255, blue: 187/255, alpha: 1), UIColor(red: 219/255, green: 134/255, blue: 169/255, alpha: 1), UIColor(red: 187/255, green: 217/255, blue: 200/255, alpha: 1), UIColor(red: 244/255, green: 218/255, blue: 201/255, alpha: 1), UIColor(red: 165/255, green: 103/255, blue: 178/255, alpha: 1), UIColor(red: 255/255, green: 230/255, blue: 105/255, alpha: 1), UIColor(red: 0, green: 160/255, blue: 178/255, alpha: 1),UIColor(red: 161/255, green: 255/255, blue: 143/255, alpha: 1)]
+    var ColorArray : [UIColor] = [
+        UIColor(red: 240/255, green: 134/255, blue: 107/255, alpha: 1),
+        UIColor(red: 237/255, green: 182/255, blue: 81/255, alpha: 1),
+        UIColor(red: 237/255, green: 247/255, blue: 120/255, alpha: 1),
+        UIColor(red: 196/255, green: 210/255, blue: 228/255, alpha: 1),
+        UIColor(red: 192/255, green: 178/255, blue: 231/255, alpha: 1),
+        UIColor(red: 245/255, green: 169/255, blue: 173/255, alpha: 1),
+        UIColor(red: 247/255, green: 221/255, blue: 120/255, alpha: 1),
+        UIColor(red: 140/255, green: 219/255, blue: 178/255, alpha: 1),
+        UIColor(red: 140/255, green: 203/255, blue: 219/255, alpha: 1),
+        UIColor(red: 244/255, green: 210/255, blue: 236/255, alpha: 1)
+    ]
     
     
     @IBOutlet weak var titleMon: UIView!
@@ -241,7 +252,13 @@ class TimeTableViewController: UIViewController {
                     if valueBool {
                         if titleLabelArray[yoil][gyosi].text == ""{
                             titleLabelArray[yoil][gyosi].text = timeTableLectureArray[i].lec_name
+                            if gyosi < 6 {
+                                titleLabelArray[yoil][gyosi].numberOfLines = 2
+                            }else{
+                                titleLabelArray[yoil][gyosi].numberOfLines = 1
+                            }
                             subLabelArray[yoil][gyosi].text = timeTableLectureArray[i].lec_location
+                            subLabelArray[yoil][gyosi].adjustsFontSizeToFitWidth = true
                         }
                     }
                 }else{
