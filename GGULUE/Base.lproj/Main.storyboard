@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tax-3F-dpF">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AxH-cl-Yft">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,33 +9,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meeting Room List View Controller-->
-        <scene sceneID="K0K-7E-vQD">
+        <!--FavoriteList-->
+        <scene sceneID="yWi-eI-YbD">
             <objects>
-                <tableViewController id="Tax-3F-dpF" customClass="MeetingRoomListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xeP-WF-aSh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" id="szo-Ir-4JJ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="szo-Ir-4JJ" id="T3B-oJ-RFq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Tax-3F-dpF" id="sSn-0x-WnF"/>
-                            <outlet property="delegate" destination="Tax-3F-dpF" id="NV0-Ol-SFy"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mce-cy-pLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="FavoriteStoryboard" referencedIdentifier="FavoriteList" id="2JK-tr-53w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tpd-5m-zvJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyD-iU-f8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="136"/>
+            <point key="canvasLocation" x="-214" y="569"/>
+        </scene>
+        <!--algorithmView-->
+        <scene sceneID="Mu6-I5-khh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="algorithmStoryboard" referencedIdentifier="algorithmView" id="Rpt-QB-blh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="JU3-WM-nHr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhX-wZ-82Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wvN-zo-GL7">
+            <objects>
+                <tabBarController id="AxH-cl-Yft" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MKh-VJ-zcz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dNh-WF-tEh" kind="relationship" relationship="viewControllers" id="vgX-R5-t8d"/>
+                        <segue destination="oem-dF-SXt" kind="relationship" relationship="viewControllers" id="yr9-Hu-2fi"/>
+                        <segue destination="2JK-tr-53w" kind="relationship" relationship="viewControllers" id="NGl-F7-g0x"/>
+                        <segue destination="Rpt-QB-blh" kind="relationship" relationship="viewControllers" id="i7y-UX-Lax"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lto-cm-HCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="116"/>
+        </scene>
+        <!--TimeTableView-->
+        <scene sceneID="aYw-au-uy2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TimeTableStoryboard" referencedIdentifier="TimeTableView" id="oem-dF-SXt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="e4D-Lh-ZV6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBK-hK-A5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-467" y="569"/>
+        </scene>
+        <!--LectureList-->
+        <scene sceneID="0at-Vj-DjW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LectureListStoryboard" referencedIdentifier="LectureList" id="dNh-WF-tEh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZvD-Sl-z5E"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6D-dO-Ixl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="569"/>
         </scene>
     </scenes>
 </document>

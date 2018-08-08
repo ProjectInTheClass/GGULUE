@@ -2,8 +2,8 @@
 //  GGULUEUITests.swift
 //  GGULUEUITests
 //
-//  Created by Eujeong's MacBook Pro on 2018. 7. 17..
-//  Copyright © 2018년 Eujeong's MacBook Pro. All rights reserved.
+//  Created by KimYoungHoon on 2018. 7. 26..
+//  Copyright © 2018년 GGULUE. All rights reserved.
 //
 
 import XCTest
