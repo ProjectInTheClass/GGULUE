@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0588DE9760D8722A8B1B5551AD1F12CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		09C7304C35457870EB2DFFC15964C889 /* Pods-GGULUETests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE2065D2A98270653BF2B38F68CBCD3 /* Pods-GGULUETests-dummy.m */; };
+		13605D4194199DF0733AFF83741B92FB /* Pods-GGULUEUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 276099FFE9CCB4FE6CE99200700685A6 /* Pods-GGULUEUITests-dummy.m */; };
+		240CBCFEF3A4093BBF8FBB20E261B0EB /* Pods-GGULUE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A757379764BB81F1E3EC0B7D7B7CBCA /* Pods-GGULUE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24BA16454D642A18C9CE4F1E6C143CD6 /* TKRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A64AF7D3569C8BDAB11BFD227DB3F /* TKRadarChart.swift */; };
+		26B22EF3A70928794164AF082A6E6E6A /* Pods-GGULUETests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B05E9CD5DDEF5FA5AA550D3C691273 /* Pods-GGULUETests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		563E0A595AB4A86E2F88E951ED5D9158 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		663705A7493AC86CAF2555D09B7CEC32 /* Pods-GGULUE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A3A78E2D0F7F583D87CB730E916C30 /* Pods-GGULUE-dummy.m */; };
+		84055A18E554564C7E5B89646F0C813A /* TKRadarChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF5170E048C7CE8F8BC023D1085268F /* TKRadarChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A66AE451590AB1691E25EF8BAE045592 /* Pods-GGULUEUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE16164573CE75204FB718EE346EE56B /* Pods-GGULUEUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB3D3394ED8725BB14FAE46877CA62F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		C5F8D964DE8A2CC7674EB4E3F0A725DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		EB71F61A2F58F5FB0A13AA2760355B2B /* TKRadarChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEF353DB6272DAC8059CBF64CAFA1F2 /* TKRadarChart-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5372670D5CD3A6885D5E410CDC7DEBE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352A0961F2B7C700896CDAC37F82D087;
+			remoteInfo = "Pods-GGULUE";
+		};
+		7D4A1B61D1E7536B2076B7B6507AEDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C4BA6A101CA62BFA5C8E180C4DD756A;
+			remoteInfo = TKRadarChart;
+		};
+		9A2623EC750A0E17CE74D51A6AD4AA72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352A0961F2B7C700896CDAC37F82D087;
+			remoteInfo = "Pods-GGULUE";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B05E9CD5DDEF5FA5AA550D3C691273 /* Pods-GGULUETests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGULUETests-umbrella.h"; sourceTree = "<group>"; };
+		08A3A78E2D0F7F583D87CB730E916C30 /* Pods-GGULUE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGULUE-dummy.m"; sourceTree = "<group>"; };
+		09C463D2D8056EC569779F7870E77555 /* Pods-GGULUETests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGULUETests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A39D7A75BAF198C57D14876E95F2CDE /* Pods-GGULUEUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGULUEUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A757379764BB81F1E3EC0B7D7B7CBCA /* Pods-GGULUE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGULUE-umbrella.h"; sourceTree = "<group>"; };
+		227CBB322319552743B7BBA0D0B35D37 /* Pods-GGULUETests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGULUETests.modulemap"; sourceTree = "<group>"; };
+		276099FFE9CCB4FE6CE99200700685A6 /* Pods-GGULUEUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGULUEUITests-dummy.m"; sourceTree = "<group>"; };
+		288E7957C84E2EB476C5F0BBB98EEE09 /* Pods-GGULUETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUETests.debug.xcconfig"; sourceTree = "<group>"; };
+		296377D19213FBD930DE725540AF0BCF /* Pods-GGULUEUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUEUITests-frameworks.sh"; sourceTree = "<group>"; };
+		29BD30AF3A0B6E749B0B19045E032C8C /* Pods-GGULUE-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGULUE-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AA802FC9C73A695A26C8B0FA1DAE4FB /* Pods-GGULUE-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGULUE-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EAA54C462C479BA4B7B9CF4CD1D7388 /* Pods-GGULUE-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUE-resources.sh"; sourceTree = "<group>"; };
+		3D34754539AC0038ADFF06796165A790 /* TKRadarChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TKRadarChart.modulemap; sourceTree = "<group>"; };
+		3F4F7AAB8333CD0D5CE210B13AB9D88B /* TKRadarChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TKRadarChart.framework; path = TKRadarChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BFCF73AE7DDAF2489FA2FA8DBE070F /* Pods-GGULUE-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUE-frameworks.sh"; sourceTree = "<group>"; };
+		455889A1BB674CA06EE30A001D771EEE /* TKRadarChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TKRadarChart.xcconfig; sourceTree = "<group>"; };
+		550F96C9FEDE54761F106AB87BA85CBE /* Pods-GGULUEUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUEUITests-resources.sh"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5DBF31C2253EE0CCC8D611A87897F449 /* Pods-GGULUEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7963C108E406DD133BA1CC8C1B057133 /* Pods-GGULUEUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGULUEUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		88A9EAA0F3F124789FA0C3E78A24C30F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903623703356DB412404830526EFCF46 /* Pods-GGULUEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91E021DA1D0D80432A03282E99238191 /* Pods-GGULUE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUE.release.xcconfig"; sourceTree = "<group>"; };
+		925A64AF7D3569C8BDAB11BFD227DB3F /* TKRadarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TKRadarChart.swift; path = TKRadarChart/TKRadarChart.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0D23D45558DB45B190F539A37166043 /* TKRadarChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TKRadarChart-prefix.pch"; sourceTree = "<group>"; };
+		A292C387E48225A8CE6592FB17A9BCCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE16164573CE75204FB718EE346EE56B /* Pods-GGULUEUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGULUEUITests-umbrella.h"; sourceTree = "<group>"; };
+		B04042E1D768BC356FFADE30CB79E5FF /* Pods_GGULUE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGULUE.framework; path = "Pods-GGULUE.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1D94DA776CFFE4E7F3CD1133A228E1 /* Pods-GGULUETests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUETests-resources.sh"; sourceTree = "<group>"; };
+		BC61FE262EAE9FB427598DDF5E8F02CC /* Pods-GGULUE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUE.debug.xcconfig"; sourceTree = "<group>"; };
+		C4007C89A3AA4D93B653B005511F4345 /* Pods-GGULUETests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGULUETests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C812957B47FA76054DF7E48D6D2FA156 /* Pods-GGULUETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUETests.release.xcconfig"; sourceTree = "<group>"; };
+		C84BB0D86737BC2CDE821C906B7FD0F7 /* Pods_GGULUETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGULUETests.framework; path = "Pods-GGULUETests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C907F93CCFD307C42EEECB34DB4A57CA /* Pods-GGULUETests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUETests-frameworks.sh"; sourceTree = "<group>"; };
+		D9F1F828746A997EE9E7BEF702B08785 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEF353DB6272DAC8059CBF64CAFA1F2 /* TKRadarChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TKRadarChart-dummy.m"; sourceTree = "<group>"; };
+		DCB13F7B93CE8086FB33F8DD63B24E10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E111169E46BA03C47FEFA3F9B095A1A9 /* Pods-GGULUEUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGULUEUITests.modulemap"; sourceTree = "<group>"; };
+		E9014E80C31DD45406712628A2107471 /* Pods-GGULUE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGULUE.modulemap"; sourceTree = "<group>"; };
+		F8593A749FAFA99C22537EABC14610D9 /* Pods_GGULUEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGULUEUITests.framework; path = "Pods-GGULUEUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF5170E048C7CE8F8BC023D1085268F /* TKRadarChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TKRadarChart-umbrella.h"; sourceTree = "<group>"; };
+		FCE2065D2A98270653BF2B38F68CBCD3 /* Pods-GGULUETests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGULUETests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3798229EA0CCEC2FC763FDE72488406C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0588DE9760D8722A8B1B5551AD1F12CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2DDAEFDEAC1E35F1EDE0C757E039C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F8D964DE8A2CC7674EB4E3F0A725DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849E18643AD674184E79C16EB8D2A997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563E0A595AB4A86E2F88E951ED5D9158 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C633B35A634EC591251A81A6368AE415 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3D3394ED8725BB14FAE46877CA62F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083D9724A26B23D2A108C2B971BAFB6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04042E1D768BC356FFADE30CB79E5FF /* Pods_GGULUE.framework */,
+				C84BB0D86737BC2CDE821C906B7FD0F7 /* Pods_GGULUETests.framework */,
+				F8593A749FAFA99C22537EABC14610D9 /* Pods_GGULUEUITests.framework */,
+				3F4F7AAB8333CD0D5CE210B13AB9D88B /* TKRadarChart.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F2EEA6EFC88E5489A189DBD2E05C803 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A292C387E48225A8CE6592FB17A9BCCE /* Info.plist */,
+				3D34754539AC0038ADFF06796165A790 /* TKRadarChart.modulemap */,
+				455889A1BB674CA06EE30A001D771EEE /* TKRadarChart.xcconfig */,
+				DBEF353DB6272DAC8059CBF64CAFA1F2 /* TKRadarChart-dummy.m */,
+				A0D23D45558DB45B190F539A37166043 /* TKRadarChart-prefix.pch */,
+				FAF5170E048C7CE8F8BC023D1085268F /* TKRadarChart-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TKRadarChart";
+			sourceTree = "<group>";
+		};
+		19EC562A7D2FE49FCAE14A3009804A8A /* Pods-GGULUEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB13F7B93CE8086FB33F8DD63B24E10 /* Info.plist */,
+				E111169E46BA03C47FEFA3F9B095A1A9 /* Pods-GGULUEUITests.modulemap */,
+				0A39D7A75BAF198C57D14876E95F2CDE /* Pods-GGULUEUITests-acknowledgements.markdown */,
+				7963C108E406DD133BA1CC8C1B057133 /* Pods-GGULUEUITests-acknowledgements.plist */,
+				276099FFE9CCB4FE6CE99200700685A6 /* Pods-GGULUEUITests-dummy.m */,
+				296377D19213FBD930DE725540AF0BCF /* Pods-GGULUEUITests-frameworks.sh */,
+				550F96C9FEDE54761F106AB87BA85CBE /* Pods-GGULUEUITests-resources.sh */,
+				AE16164573CE75204FB718EE346EE56B /* Pods-GGULUEUITests-umbrella.h */,
+				5DBF31C2253EE0CCC8D611A87897F449 /* Pods-GGULUEUITests.debug.xcconfig */,
+				903623703356DB412404830526EFCF46 /* Pods-GGULUEUITests.release.xcconfig */,
+			);
+			name = "Pods-GGULUEUITests";
+			path = "Target Support Files/Pods-GGULUEUITests";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FFC1EB3EB727D0D96ED9E5C91307165 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA01B938E1A8BC102CCEAA87DA7AE7 /* Pods-GGULUE */,
+				D5DEF916561C66D248C15091CE35AACC /* Pods-GGULUETests */,
+				19EC562A7D2FE49FCAE14A3009804A8A /* Pods-GGULUEUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		75431634CDFB4B579089F7C8302A4455 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBE549308E862D9CF3D25C2143B6D47D /* TKRadarChart */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				75431634CDFB4B579089F7C8302A4455 /* Pods */,
+				083D9724A26B23D2A108C2B971BAFB6A /* Products */,
+				5FFC1EB3EB727D0D96ED9E5C91307165 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEEA01B938E1A8BC102CCEAA87DA7AE7 /* Pods-GGULUE */ = {
+			isa = PBXGroup;
+			children = (
+				D9F1F828746A997EE9E7BEF702B08785 /* Info.plist */,
+				E9014E80C31DD45406712628A2107471 /* Pods-GGULUE.modulemap */,
+				2AA802FC9C73A695A26C8B0FA1DAE4FB /* Pods-GGULUE-acknowledgements.markdown */,
+				29BD30AF3A0B6E749B0B19045E032C8C /* Pods-GGULUE-acknowledgements.plist */,
+				08A3A78E2D0F7F583D87CB730E916C30 /* Pods-GGULUE-dummy.m */,
+				40BFCF73AE7DDAF2489FA2FA8DBE070F /* Pods-GGULUE-frameworks.sh */,
+				2EAA54C462C479BA4B7B9CF4CD1D7388 /* Pods-GGULUE-resources.sh */,
+				0A757379764BB81F1E3EC0B7D7B7CBCA /* Pods-GGULUE-umbrella.h */,
+				BC61FE262EAE9FB427598DDF5E8F02CC /* Pods-GGULUE.debug.xcconfig */,
+				91E021DA1D0D80432A03282E99238191 /* Pods-GGULUE.release.xcconfig */,
+			);
+			name = "Pods-GGULUE";
+			path = "Target Support Files/Pods-GGULUE";
+			sourceTree = "<group>";
+		};
+		D5DEF916561C66D248C15091CE35AACC /* Pods-GGULUETests */ = {
+			isa = PBXGroup;
+			children = (
+				88A9EAA0F3F124789FA0C3E78A24C30F /* Info.plist */,
+				227CBB322319552743B7BBA0D0B35D37 /* Pods-GGULUETests.modulemap */,
+				09C463D2D8056EC569779F7870E77555 /* Pods-GGULUETests-acknowledgements.markdown */,
+				C4007C89A3AA4D93B653B005511F4345 /* Pods-GGULUETests-acknowledgements.plist */,
+				FCE2065D2A98270653BF2B38F68CBCD3 /* Pods-GGULUETests-dummy.m */,
+				C907F93CCFD307C42EEECB34DB4A57CA /* Pods-GGULUETests-frameworks.sh */,
+				BB1D94DA776CFFE4E7F3CD1133A228E1 /* Pods-GGULUETests-resources.sh */,
+				02B05E9CD5DDEF5FA5AA550D3C691273 /* Pods-GGULUETests-umbrella.h */,
+				288E7957C84E2EB476C5F0BBB98EEE09 /* Pods-GGULUETests.debug.xcconfig */,
+				C812957B47FA76054DF7E48D6D2FA156 /* Pods-GGULUETests.release.xcconfig */,
+			);
+			name = "Pods-GGULUETests";
+			path = "Target Support Files/Pods-GGULUETests";
+			sourceTree = "<group>";
+		};
+		DBE549308E862D9CF3D25C2143B6D47D /* TKRadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				925A64AF7D3569C8BDAB11BFD227DB3F /* TKRadarChart.swift */,
+				0F2EEA6EFC88E5489A189DBD2E05C803 /* Support Files */,
+			);
+			name = TKRadarChart;
+			path = TKRadarChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43CC27568C946CA0AEE153AB9A09FA87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240CBCFEF3A4093BBF8FBB20E261B0EB /* Pods-GGULUE-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F41E6101E528301BB3A8822BA715559 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B22EF3A70928794164AF082A6E6E6A /* Pods-GGULUETests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB57EE6B1A593C918A77ADF4A2033491 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84055A18E554564C7E5B89646F0C813A /* TKRadarChart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED69092E2FF463FD24820C7896B52CB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66AE451590AB1691E25EF8BAE045592 /* Pods-GGULUEUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D1D84C98F24E5FDE87ABC18A3EC4825 /* Pods-GGULUEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC358BB3C53AA037A6CF1D040170A93C /* Build configuration list for PBXNativeTarget "Pods-GGULUEUITests" */;
+			buildPhases = (
+				2521F3CF3A41E2C43F7EE933E8FD33E0 /* Sources */,
+				C633B35A634EC591251A81A6368AE415 /* Frameworks */,
+				ED69092E2FF463FD24820C7896B52CB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4756BCC062B1A949470C4F435E5F088 /* PBXTargetDependency */,
+			);
+			name = "Pods-GGULUEUITests";
+			productName = "Pods-GGULUEUITests";
+			productReference = F8593A749FAFA99C22537EABC14610D9 /* Pods_GGULUEUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		352A0961F2B7C700896CDAC37F82D087 /* Pods-GGULUE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A01405A702D47BD6087B0F59004820C /* Build configuration list for PBXNativeTarget "Pods-GGULUE" */;
+			buildPhases = (
+				088E015FCF159D2F2523D90D81C84321 /* Sources */,
+				3B2DDAEFDEAC1E35F1EDE0C757E039C5 /* Frameworks */,
+				43CC27568C946CA0AEE153AB9A09FA87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D739F67918364FAE56121BDF6A875FF /* PBXTargetDependency */,
+			);
+			name = "Pods-GGULUE";
+			productName = "Pods-GGULUE";
+			productReference = B04042E1D768BC356FFADE30CB79E5FF /* Pods_GGULUE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E66D6B0A4F3AAE98DF6A4B3D837E08B /* Pods-GGULUETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B3213086BE090E2FDBEC4F5EBFA3AB /* Build configuration list for PBXNativeTarget "Pods-GGULUETests" */;
+			buildPhases = (
+				81B540CF2D099060E10AC91544C0BD78 /* Sources */,
+				849E18643AD674184E79C16EB8D2A997 /* Frameworks */,
+				4F41E6101E528301BB3A8822BA715559 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE7D201EB94D4B3708CA9C31EA18A537 /* PBXTargetDependency */,
+			);
+			name = "Pods-GGULUETests";
+			productName = "Pods-GGULUETests";
+			productReference = C84BB0D86737BC2CDE821C906B7FD0F7 /* Pods_GGULUETests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C4BA6A101CA62BFA5C8E180C4DD756A /* TKRadarChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 678BE459FD6D0260B2FE2078FD816A80 /* Build configuration list for PBXNativeTarget "TKRadarChart" */;
+			buildPhases = (
+				767E6A81FE142FE5C84F37896C998C70 /* Sources */,
+				3798229EA0CCEC2FC763FDE72488406C /* Frameworks */,
+				AB57EE6B1A593C918A77ADF4A2033491 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKRadarChart;
+			productName = TKRadarChart;
+			productReference = 3F4F7AAB8333CD0D5CE210B13AB9D88B /* TKRadarChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 083D9724A26B23D2A108C2B971BAFB6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				352A0961F2B7C700896CDAC37F82D087 /* Pods-GGULUE */,
+				5E66D6B0A4F3AAE98DF6A4B3D837E08B /* Pods-GGULUETests */,
+				1D1D84C98F24E5FDE87ABC18A3EC4825 /* Pods-GGULUEUITests */,
+				7C4BA6A101CA62BFA5C8E180C4DD756A /* TKRadarChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		088E015FCF159D2F2523D90D81C84321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663705A7493AC86CAF2555D09B7CEC32 /* Pods-GGULUE-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2521F3CF3A41E2C43F7EE933E8FD33E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13605D4194199DF0733AFF83741B92FB /* Pods-GGULUEUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767E6A81FE142FE5C84F37896C998C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB71F61A2F58F5FB0A13AA2760355B2B /* TKRadarChart-dummy.m in Sources */,
+				24BA16454D642A18C9CE4F1E6C143CD6 /* TKRadarChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B540CF2D099060E10AC91544C0BD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C7304C35457870EB2DFFC15964C889 /* Pods-GGULUETests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D739F67918364FAE56121BDF6A875FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TKRadarChart;
+			target = 7C4BA6A101CA62BFA5C8E180C4DD756A /* TKRadarChart */;
+			targetProxy = 7D4A1B61D1E7536B2076B7B6507AEDF5 /* PBXContainerItemProxy */;
+		};
+		BE7D201EB94D4B3708CA9C31EA18A537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GGULUE";
+			target = 352A0961F2B7C700896CDAC37F82D087 /* Pods-GGULUE */;
+			targetProxy = 9A2623EC750A0E17CE74D51A6AD4AA72 /* PBXContainerItemProxy */;
+		};
+		E4756BCC062B1A949470C4F435E5F088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GGULUE";
+			target = 352A0961F2B7C700896CDAC37F82D087 /* Pods-GGULUE */;
+			targetProxy = 5372670D5CD3A6885D5E410CDC7DEBE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B95A3191DDFFD1CC2D6C786908FAA10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E021DA1D0D80432A03282E99238191 /* Pods-GGULUE.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGULUE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGULUE/Pods-GGULUE.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C22AA2F93E2E475F085D9AD66BC1E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC61FE262EAE9FB427598DDF5E8F02CC /* Pods-GGULUE.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGULUE/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGULUE/Pods-GGULUE.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6358919801FA1E2537F8F345D47FDB91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455889A1BB674CA06EE30A001D771EEE /* TKRadarChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TKRadarChart/TKRadarChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TKRadarChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TKRadarChart/TKRadarChart.modulemap";
+				PRODUCT_MODULE_NAME = TKRadarChart;
+				PRODUCT_NAME = TKRadarChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AC1BCEF6C95D0B68EDCF59DA903CDB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903623703356DB412404830526EFCF46 /* Pods-GGULUEUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGULUEUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGULUEUITests/Pods-GGULUEUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A82CA56FCE53739B802890A2F6FDA5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DBF31C2253EE0CCC8D611A87897F449 /* Pods-GGULUEUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGULUEUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGULUEUITests/Pods-GGULUEUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C328F42A87ED66F76F0D96C2229E88A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455889A1BB674CA06EE30A001D771EEE /* TKRadarChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TKRadarChart/TKRadarChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TKRadarChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TKRadarChart/TKRadarChart.modulemap";
+				PRODUCT_MODULE_NAME = TKRadarChart;
+				PRODUCT_NAME = TKRadarChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5C84A173187DEABE8B36B4DF0965CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 288E7957C84E2EB476C5F0BBB98EEE09 /* Pods-GGULUETests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGULUETests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGULUETests/Pods-GGULUETests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCA03563C986E1AE4CFEDCCFB39CAF5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C812957B47FA76054DF7E48D6D2FA156 /* Pods-GGULUETests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GGULUETests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GGULUETests/Pods-GGULUETests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A01405A702D47BD6087B0F59004820C /* Build configuration list for PBXNativeTarget "Pods-GGULUE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C22AA2F93E2E475F085D9AD66BC1E05 /* Debug */,
+				0B95A3191DDFFD1CC2D6C786908FAA10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
+				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		678BE459FD6D0260B2FE2078FD816A80 /* Build configuration list for PBXNativeTarget "TKRadarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C328F42A87ED66F76F0D96C2229E88A4 /* Debug */,
+				6358919801FA1E2537F8F345D47FDB91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC358BB3C53AA037A6CF1D040170A93C /* Build configuration list for PBXNativeTarget "Pods-GGULUEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A82CA56FCE53739B802890A2F6FDA5DA /* Debug */,
+				6AC1BCEF6C95D0B68EDCF59DA903CDB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B3213086BE090E2FDBEC4F5EBFA3AB /* Build configuration list for PBXNativeTarget "Pods-GGULUETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C84A173187DEABE8B36B4DF0965CC6 /* Debug */,
+				CCA03563C986E1AE4CFEDCCFB39CAF5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

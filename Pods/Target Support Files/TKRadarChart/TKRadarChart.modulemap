@@ -1,0 +1,6 @@
+framework module TKRadarChart {
+  umbrella header "TKRadarChart-umbrella.h"
+
+  export *
+  module * { export * }
+}
