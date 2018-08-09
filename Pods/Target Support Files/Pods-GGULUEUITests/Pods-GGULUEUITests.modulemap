@@ -1,0 +1,6 @@
+framework module Pods_GGULUEUITests {
+  umbrella header "Pods-GGULUEUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

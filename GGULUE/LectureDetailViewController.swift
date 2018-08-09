@@ -89,6 +89,8 @@ class LectureDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let chartVC = self.childViewControllers[0] as! RadarChartViewController
+        chartVC.selectedLecture = selectedLecture
         // Do any additional setup after loading the view.
     }
 
