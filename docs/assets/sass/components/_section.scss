@@ -1,5 +1,5 @@
 ///
-/// Stellar by HTML5 UP
+/// Forty by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -14,91 +14,56 @@
 
 	header {
 		&.major {
-			margin-bottom: (_size(element-margin) * 1.5);
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			margin-bottom: _size(element-margin);
 
-			h2 {
-				font-size: 2em;
+			> :first-child {
+				margin-bottom: 0;
+				width: calc(100% + 0.5em);
 
 				&:after {
-					display: block;
 					content: '';
-					width: 3.25em;
+					background-color: _palette(fg-bold);
+					display: block;
 					height: 2px;
-					margin: (_size(element-margin) * 0.35) 0 (_size(element-margin) * 0.5) 0;
-					border-radius: 2px;
-
-					section.special &, article.special & {
-						margin-left: auto;
-						margin-right: auto;
-					}
+					margin: 0.325em 0 0.5em 0;
+					width: 100%;
 				}
 			}
 
-			p {
-				font-size: 1.25em;
-				letter-spacing: _font(letter-spacing);
-			}
-
-			&.special {
-				text-align: center;
-
-				h2 {
-					&:after {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-			}
-		}
-	}
-
-	footer {
-		&.major {
-			margin-top: (_size(element-margin) * 1.5);
-		}
-	}
-
-	@include breakpoint('<=small') {
-		header {
-			&.major {
+			> p {
+				font-size: 0.7em;
+				font-weight: _font(weight-bold);
+				letter-spacing: _font(letter-spacing-alt);
 				margin-bottom: 0;
+				text-transform: uppercase;
+			}
 
-				h2 {
-					font-size: 1.5em;
+			body.is-ie & {
+				> :first-child {
+					&:after {
+						max-width: 9em;
+					}
 				}
 
-				p {
-					font-size: 1em;
-					letter-spacing: 0;
+				> h1 {
+					&:after {
+						max-width: 100% !important;
+					}
+				}
+			}
+		}
 
+		@include breakpoint('<=small') {
+			&.major {
+				> p {
 					br {
 						display: none;
 					}
 				}
 			}
 		}
-
-		footer {
-			&.major {
-				margin-top: 0;
-			}
-		}
 	}
-
-	@mixin color-section($p: null) {
-		header {
-			&.major {
-				h2 {
-					&:after {
-						background-color: _palette($p, border);
-
-						@if $p == 'invert' {
-							@include vendor('background-image', 'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})');
-						}
-					}
-				}
-			}
-		}
-	}
-
-	@include color-section;
