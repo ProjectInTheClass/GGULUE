@@ -38,7 +38,11 @@ class LectureListViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LectureCell", for: indexPath)
         
         cell.textLabel?.text = "\(indexPath.row+1) 위   \(tableLectureArray[indexPath.row].lec_name!), \(tableLectureArray[indexPath.row].lec_prof!) 교수"
-        cell.detailTextLabel?.text = "\(round(tableLectureArray[indexPath.row].self_score*100)/100)"
+        if tableLectureArray[indexPath.row].self_score == -1{
+            cell.detailTextLabel?.text = "평가없음"
+        }else{
+            cell.detailTextLabel?.text = "\(round(tableLectureArray[indexPath.row].self_score*100)/100)"
+        }
         
         return cell
     }

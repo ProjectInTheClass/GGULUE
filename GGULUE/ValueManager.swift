@@ -30,16 +30,31 @@ struct Lecture {
     
     //알고리즘에 따라 점수계산
     mutating func cal_total(_ b:CalculatorStandard) -> Lecture{
-        var result : Double = 0
         var temp: Double = 0
+        var tempArray : [Double] = []
+        var temp2 : Double = 0
         temp = b.r_attendence+b.r_grade+b.r_level+b.r_amount+b.r_achi
         if temp == 1{
-            result += (self.fivescore[0][0]!*b.r_attendence)
-            result += (self.fivescore[0][1]!*b.r_level)
-            result += (self.fivescore[0][2]!*b.r_amount)
-            result += (self.fivescore[0][3]!*b.r_grade)
-            result += (self.fivescore[0][4]!*b.r_achi)
-            self.self_score = result
+            for i in self.fivescore{
+                if i[0] != -1{
+                    var result : Double = 0
+                    result += (i[0]!*b.r_attendence)
+                    result += (i[1]!*b.r_level)
+                    result += (i[2]!*b.r_amount)
+                    result += (i[3]!*b.r_grade)
+                    result += (i[4]!*b.r_achi)
+                    tempArray.append(result)
+                }
+            }
+            for j in tempArray{
+                temp2 += j
+            }
+            if tempArray.count != 0{
+                temp2 = temp2/Double(tempArray.count)
+            }else{
+                temp2 = -1
+            }
+            self.self_score = temp2
         }
         return self
     }
@@ -113,6 +128,8 @@ func makeKlueData(_ data : [String : Any]) -> [KlueData]{
         for i in newScoreArray!{
             if let value2 = Double(i){
                 newScoreArray2.append(value2)
+            }else{
+                newScoreArray2.append(-1)
             }
         }
         let newStringValue : String = (detail["starscore"]?.trimmingCharacters(in: ["★"]).trimmingCharacters(in: [" "]))!
@@ -300,7 +317,6 @@ var lec_6 = Lecture(IdNumber: "", attend_limit: "", attnd_free: "", exchange: ""
 var lectureArray : [Lecture] = [lec_1, lec_2, lec_3, lec_4, lec_5, lec_6]
 var allLectureArray : [Lecture] = lectureDataArray
 
-var dayOfWeek = ["월" : 1, "화" : 2, "수" : 3, "목" : 4, "금" : 5]
 var tableLectureArray : [Lecture] = []
 var favoriteLectureArray : [Lecture] = []
 var confirmLectureArray : [String] = []      //compare with favoriteLectureArray

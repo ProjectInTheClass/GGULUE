@@ -7,7 +7,18 @@
 //
 import UIKit
 class TimeTableViewController: UIViewController {
-    var ColorArray : [UIColor] = [UIColor(red: 245/255, green: 197/255, blue: 202/255, alpha: 1), UIColor(red: 241/255, green: 169/255, blue: 187/255, alpha: 1), UIColor(red: 219/255, green: 134/255, blue: 169/255, alpha: 1), UIColor(red: 187/255, green: 217/255, blue: 200/255, alpha: 1), UIColor(red: 244/255, green: 218/255, blue: 201/255, alpha: 1), UIColor(red: 165/255, green: 103/255, blue: 178/255, alpha: 1), UIColor(red: 255/255, green: 230/255, blue: 105/255, alpha: 1), UIColor(red: 0, green: 160/255, blue: 178/255, alpha: 1),UIColor(red: 161/255, green: 255/255, blue: 143/255, alpha: 1)]
+    var ColorArray : [UIColor] = [
+        UIColor(red: 240/255, green: 134/255, blue: 107/255, alpha: 1),
+        UIColor(red: 237/255, green: 182/255, blue: 81/255, alpha: 1),
+        UIColor(red: 237/255, green: 247/255, blue: 120/255, alpha: 1),
+        UIColor(red: 196/255, green: 210/255, blue: 228/255, alpha: 1),
+        UIColor(red: 192/255, green: 178/255, blue: 231/255, alpha: 1),
+        UIColor(red: 245/255, green: 169/255, blue: 173/255, alpha: 1),
+        UIColor(red: 247/255, green: 221/255, blue: 120/255, alpha: 1),
+        UIColor(red: 140/255, green: 219/255, blue: 178/255, alpha: 1),
+        UIColor(red: 140/255, green: 203/255, blue: 219/255, alpha: 1),
+        UIColor(red: 244/255, green: 210/255, blue: 236/255, alpha: 1)
+    ]
     
     
     @IBOutlet weak var titleMon: UIView!
@@ -15,16 +26,18 @@ class TimeTableViewController: UIViewController {
     @IBOutlet weak var titleWed: UIView!
     @IBOutlet weak var titleThu: UIView!
     @IBOutlet weak var titleFri: UIView!
+
+    @IBOutlet weak var time1: UIView!
+    @IBOutlet weak var time2: UIView!
+    @IBOutlet weak var time3: UIView!
+    @IBOutlet weak var time4: UIView!
+    @IBOutlet weak var time5: UIView!
+    @IBOutlet weak var time6: UIView!
+    @IBOutlet weak var time7: UIView!
+    @IBOutlet weak var time8: UIView!
+    @IBOutlet weak var time9: UIView!
     
-    @IBOutlet weak var class1: UIView!
-    @IBOutlet weak var class2: UIView!
-    @IBOutlet weak var class3: UIView!
-    @IBOutlet weak var class4: UIView!
-    @IBOutlet weak var class5: UIView!
-    @IBOutlet weak var class6: UIView!
-    @IBOutlet weak var class7: UIView!
-    @IBOutlet weak var class8: UIView!
-    @IBOutlet weak var class9: UIView!
+
     
     
     @IBOutlet weak var mon1: UIView!
@@ -77,107 +90,102 @@ class TimeTableViewController: UIViewController {
     @IBOutlet weak var fri8: UIView!
     @IBOutlet weak var fri9: UIView!
 
-//    @IBOutlet weak var mon1Title: UILabel!
-//    @IBOutlet weak var mon1Sub: UILabel!
-//    @IBOutlet weak var mon2Title: UILabel!
-//    @IBOutlet weak var mon2Sub: UILabel!
-//    @IBOutlet weak var mon3Title: UILabel!
-//    @IBOutlet weak var mon3Sub: UILabel!
-//    @IBOutlet weak var mon4Title: UILabel!
-//    @IBOutlet weak var mon4Sub: UILabel!
-//    @IBOutlet weak var mon5Title: UILabel!
-//    @IBOutlet weak var mon5Sub: UILabel!
-//    @IBOutlet weak var mon6Title: UILabel!
-//    @IBOutlet weak var mon6Sub: UILabel!
-//    @IBOutlet weak var mon7Title: UILabel!
-//    @IBOutlet weak var mon7Sub: UILabel!
-//    @IBOutlet weak var mon8Title: UILabel!
-//    @IBOutlet weak var mon8Sub: UILabel!
-//    @IBOutlet weak var mon9Title: UILabel!
-//    @IBOutlet weak var mon9Sub: UILabel!
-//
-//    @IBOutlet weak var tue1Title: UILabel!
-//    @IBOutlet weak var tue1Sub: UILabel!
-//    @IBOutlet weak var tue2Title: UILabel!
-//    @IBOutlet weak var tue2Sub: UILabel!
-//    @IBOutlet weak var tue3Title: UILabel!
-//    @IBOutlet weak var tue3Sub: UILabel!
-//    @IBOutlet weak var tue4Title: UILabel!
-//    @IBOutlet weak var tue4Sub: UILabel!
-//    @IBOutlet weak var tue5Title: UILabel!
-//    @IBOutlet weak var tue5Sub: UILabel!
-//    @IBOutlet weak var tue6Title: UILabel!
-//    @IBOutlet weak var tue6Sub: UILabel!
-//    @IBOutlet weak var tue7Title: UILabel!
-//    @IBOutlet weak var tue7Sub: UILabel!
-//    @IBOutlet weak var tue8Title: UILabel!
-//    @IBOutlet weak var tue8Sub: UILabel!
-//    @IBOutlet weak var tue9Title: UILabel!
-//    @IBOutlet weak var tue9Sub: UILabel!
-//
-//    @IBOutlet weak var wed1Title: UILabel!
-//    @IBOutlet weak var wed1Sub: UILabel!
-//    @IBOutlet weak var wed2Title: UILabel!
-//    @IBOutlet weak var wed2Sub: UILabel!
-//    @IBOutlet weak var wed3Title: UILabel!
-//    @IBOutlet weak var wed3Sub: UILabel!
-//    @IBOutlet weak var wed4Title: UILabel!
-//    @IBOutlet weak var wed4Sub: UILabel!
-//    @IBOutlet weak var wed5Title: UILabel!
-//    @IBOutlet weak var wed5Sub: UILabel!
-//    @IBOutlet weak var wed6Title: UILabel!
-//    @IBOutlet weak var wed6Sub: UILabel!
-//    @IBOutlet weak var wed7Title: UILabel!
-//    @IBOutlet weak var wed7Sub: UILabel!
-//    @IBOutlet weak var wed8Title: UILabel!
-//    @IBOutlet weak var wed8Sub: UILabel!
-//    @IBOutlet weak var wed9Title: UILabel!
-//    @IBOutlet weak var wed9Sub: UILabel!
-//
-//    @IBOutlet weak var thu1Title: UILabel!
-//    @IBOutlet weak var thu1Sub: UILabel!
-//    @IBOutlet weak var thu2Title: UILabel!
-//    @IBOutlet weak var thu2Sub: UILabel!
-//    @IBOutlet weak var thu3Title: UILabel!
-//    @IBOutlet weak var thu3Sub: UILabel!
-//    @IBOutlet weak var thu4Title: UILabel!
-//    @IBOutlet weak var thu4Sub: UILabel!
-//    @IBOutlet weak var thu5Title: UILabel!
-//    @IBOutlet weak var thu5Sub: UILabel!
-//    @IBOutlet weak var thu6Title: UILabel!
-//    @IBOutlet weak var thu6Sub: UILabel!
-//    @IBOutlet weak var thu7Title: UILabel!
-//    @IBOutlet weak var thu7Sub: UILabel!
-//    @IBOutlet weak var thu8Title: UILabel!
-//    @IBOutlet weak var thu8Sub: UILabel!
-//    @IBOutlet weak var thu9Title: UILabel!
-//    @IBOutlet weak var thu9Sub: UILabel!
-//
-//    @IBOutlet weak var fri1Title: UILabel!
-//    @IBOutlet weak var fri1Sub: UILabel!
-//    @IBOutlet weak var fri2Title: UILabel!
-//    @IBOutlet weak var fri2Sub: UILabel!
-//    @IBOutlet weak var fri3Title: UILabel!
-//    @IBOutlet weak var fri3Sub: UILabel!
-//    @IBOutlet weak var fri4Title: UILabel!
-//    @IBOutlet weak var fri4Sub: UILabel!
-//    @IBOutlet weak var fri5Title: UILabel!
-//    @IBOutlet weak var fri5Sub: UILabel!
-//    @IBOutlet weak var fri6Title: UILabel!
-//    @IBOutlet weak var fri6Sub: UILabel!
-//    @IBOutlet weak var fri7Title: UILabel!
-//    @IBOutlet weak var fri7Sub: UILabel!
-//    @IBOutlet weak var fri8Title: UILabel!
-//    @IBOutlet weak var fri8Sub: UILabel!
-//    @IBOutlet weak var fri9Title: UILabel!
-//    @IBOutlet weak var fri9Sub: UILabel!
+    @IBOutlet weak var mon1Title: UILabel!
+    @IBOutlet weak var mon1Sub: UILabel!
+    @IBOutlet weak var mon2Title: UILabel!
+    @IBOutlet weak var mon2Sub: UILabel!
+    @IBOutlet weak var mon3Title: UILabel!
+    @IBOutlet weak var mon3Sub: UILabel!
+    @IBOutlet weak var mon4Title: UILabel!
+    @IBOutlet weak var mon4Sub: UILabel!
+    @IBOutlet weak var mon5Title: UILabel!
+    @IBOutlet weak var mon5Sub: UILabel!
+    @IBOutlet weak var mon6Title: UILabel!
+    @IBOutlet weak var mon6Sub: UILabel!
+    @IBOutlet weak var mon7Title: UILabel!
+    @IBOutlet weak var mon7Sub: UILabel!
+    @IBOutlet weak var mon8Title: UILabel!
+    @IBOutlet weak var mon8Sub: UILabel!
+    @IBOutlet weak var mon9Title: UILabel!
+    @IBOutlet weak var mon9Sub: UILabel!
+
+    @IBOutlet weak var tue1Title: UILabel!
+    @IBOutlet weak var tue1Sub: UILabel!
+    @IBOutlet weak var tue2Title: UILabel!
+    @IBOutlet weak var tue2Sub: UILabel!
+    @IBOutlet weak var tue3Title: UILabel!
+    @IBOutlet weak var tue3Sub: UILabel!
+    @IBOutlet weak var tue4Title: UILabel!
+    @IBOutlet weak var tue4Sub: UILabel!
+    @IBOutlet weak var tue5Title: UILabel!
+    @IBOutlet weak var tue5Sub: UILabel!
+    @IBOutlet weak var tue6Title: UILabel!
+    @IBOutlet weak var tue6Sub: UILabel!
+    @IBOutlet weak var tue7Title: UILabel!
+    @IBOutlet weak var tue7Sub: UILabel!
+    @IBOutlet weak var tue8Title: UILabel!
+    @IBOutlet weak var tue8Sub: UILabel!
+    @IBOutlet weak var tue9Title: UILabel!
+    @IBOutlet weak var tue9Sub: UILabel!
+
+    @IBOutlet weak var wed1Title: UILabel!
+    @IBOutlet weak var wed1Sub: UILabel!
+    @IBOutlet weak var wed2Title: UILabel!
+    @IBOutlet weak var wed2Sub: UILabel!
+    @IBOutlet weak var wed3Title: UILabel!
+    @IBOutlet weak var wed3Sub: UILabel!
+    @IBOutlet weak var wed4Title: UILabel!
+    @IBOutlet weak var wed4Sub: UILabel!
+    @IBOutlet weak var wed5Title: UILabel!
+    @IBOutlet weak var wed5Sub: UILabel!
+    @IBOutlet weak var wed6Title: UILabel!
+    @IBOutlet weak var wed6Sub: UILabel!
+    @IBOutlet weak var wed7Title: UILabel!
+    @IBOutlet weak var wed7Sub: UILabel!
+    @IBOutlet weak var wed8Title: UILabel!
+    @IBOutlet weak var wed8Sub: UILabel!
+    @IBOutlet weak var wed9Title: UILabel!
+    @IBOutlet weak var wed9Sub: UILabel!
+
+    @IBOutlet weak var thu1Title: UILabel!
+    @IBOutlet weak var thu1Sub: UILabel!
+    @IBOutlet weak var thu2Title: UILabel!
+    @IBOutlet weak var thu2Sub: UILabel!
+    @IBOutlet weak var thu3Title: UILabel!
+    @IBOutlet weak var thu3Sub: UILabel!
+    @IBOutlet weak var thu4Title: UILabel!
+    @IBOutlet weak var thu4Sub: UILabel!
+    @IBOutlet weak var thu5Title: UILabel!
+    @IBOutlet weak var thu5Sub: UILabel!
+    @IBOutlet weak var thu6Title: UILabel!
+    @IBOutlet weak var thu6Sub: UILabel!
+    @IBOutlet weak var thu7Title: UILabel!
+    @IBOutlet weak var thu7Sub: UILabel!
+    @IBOutlet weak var thu8Title: UILabel!
+    @IBOutlet weak var thu8Sub: UILabel!
+    @IBOutlet weak var thu9Title: UILabel!
+    @IBOutlet weak var thu9Sub: UILabel!
+
+    @IBOutlet weak var fri1Title: UILabel!
+    @IBOutlet weak var fri1Sub: UILabel!
+    @IBOutlet weak var fri2Title: UILabel!
+    @IBOutlet weak var fri2Sub: UILabel!
+    @IBOutlet weak var fri3Title: UILabel!
+    @IBOutlet weak var fri3Sub: UILabel!
+    @IBOutlet weak var fri4Title: UILabel!
+    @IBOutlet weak var fri4Sub: UILabel!
+    @IBOutlet weak var fri5Title: UILabel!
+    @IBOutlet weak var fri5Sub: UILabel!
+    @IBOutlet weak var fri6Title: UILabel!
+    @IBOutlet weak var fri6Sub: UILabel!
+    @IBOutlet weak var fri7Title: UILabel!
+    @IBOutlet weak var fri7Sub: UILabel!
+    @IBOutlet weak var fri8Title: UILabel!
+    @IBOutlet weak var fri8Sub: UILabel!
+    @IBOutlet weak var fri9Title: UILabel!
+    @IBOutlet weak var fri9Sub: UILabel!
     
-    
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -196,27 +204,27 @@ class TimeTableViewController: UIViewController {
             [thu1, thu2, thu3, thu4, thu5, thu6, thu7, thu8, thu9],
             [fri1, fri2, fri3, fri4, fri5, fri6, fri7, fri8, fri9]
         ]
-        let defaultViewArray : [UIView] =  [titleMon, titleTue, titleWed, titleThu, titleFri, class1, class2, class3, class4, class5, class6, class7, class8, class9]
-//        let titleLabelArray : [[UILabel]] = [
-//            [mon1Title, mon2Title, mon3Title, mon4Title, mon5Title, mon6Title, mon7Title, mon8Title, mon9Title],
-//            [tue1Title, tue2Title, tue3Title, tue4Title, tue5Title, tue6Title, tue7Title, tue8Title, tue9Title],
-//            [wed1Title, wed2Title, wed3Title, wed4Title, wed5Title, wed6Title, wed7Title, wed8Title, wed9Title],
-//            [thu1Title, thu2Title, thu3Title, thu4Title, thu5Title, thu6Title, thu7Title, thu8Title, thu9Title],
-//            [fri1Title, fri2Title, fri3Title, fri4Title, fri5Title, fri6Title, fri7Title, fri8Title, fri9Title]
-//        ]
-//        let subLabelArray : [[UILabel]] = [
-//            [mon1Sub, mon2Sub, mon3Sub, mon4Sub, mon5Sub, mon6Sub, mon7Sub, mon8Sub, mon9Sub],
-//            [tue1Sub, tue2Sub, tue3Sub, tue4Sub, tue5Sub, tue6Sub, tue7Sub, tue8Sub, tue9Sub],
-//            [wed1Sub, wed2Sub, wed3Sub, wed4Sub, wed5Sub, wed6Sub, wed7Sub, wed8Sub, wed9Sub],
-//            [thu1Sub, thu2Sub, thu3Sub, thu4Sub, thu5Sub, thu6Sub, thu7Sub, thu8Sub, thu9Sub],
-//            [fri1Sub, fri2Sub, fri3Sub, fri4Sub, fri5Sub, fri6Sub, fri7Sub, fri8Sub, fri9Sub]
-//        ]
-//        for item in 0..<5{
-//            for item2 in 0..<9{
-//                titleLabelArray[item][item2].text = ""
-//                subLabelArray[item][item2].text = ""
-//            }
-//        }
+        let defaultViewArray : [UIView] =  [titleMon, titleTue, titleWed, titleThu, titleFri, time1, time2, time3, time4, time5, time6, time7, time8, time9]
+        let titleLabelArray : [[UILabel]] = [
+            [mon1Title, mon2Title, mon3Title, mon4Title, mon5Title, mon6Title, mon7Title, mon8Title, mon9Title],
+            [tue1Title, tue2Title, tue3Title, tue4Title, tue5Title, tue6Title, tue7Title, tue8Title, tue9Title],
+            [wed1Title, wed2Title, wed3Title, wed4Title, wed5Title, wed6Title, wed7Title, wed8Title, wed9Title],
+            [thu1Title, thu2Title, thu3Title, thu4Title, thu5Title, thu6Title, thu7Title, thu8Title, thu9Title],
+            [fri1Title, fri2Title, fri3Title, fri4Title, fri5Title, fri6Title, fri7Title, fri8Title, fri9Title]
+        ]
+        let subLabelArray : [[UILabel]] = [
+            [mon1Sub, mon2Sub, mon3Sub, mon4Sub, mon5Sub, mon6Sub, mon7Sub, mon8Sub, mon9Sub],
+            [tue1Sub, tue2Sub, tue3Sub, tue4Sub, tue5Sub, tue6Sub, tue7Sub, tue8Sub, tue9Sub],
+            [wed1Sub, wed2Sub, wed3Sub, wed4Sub, wed5Sub, wed6Sub, wed7Sub, wed8Sub, wed9Sub],
+            [thu1Sub, thu2Sub, thu3Sub, thu4Sub, thu5Sub, thu6Sub, thu7Sub, thu8Sub, thu9Sub],
+            [fri1Sub, fri2Sub, fri3Sub, fri4Sub, fri5Sub, fri6Sub, fri7Sub, fri8Sub, fri9Sub]
+        ]
+        for item in 0..<5{
+            for item2 in 0..<9{
+                titleLabelArray[item][item2].text = ""
+                subLabelArray[item][item2].text = ""
+            }
+        }
         for item in defaultViewArray{
             item.layer.borderWidth = 1
             item.layer.borderColor = UIColor(displayP3Red: 214/255, green: 214/255, blue: 214/255, alpha: 1).cgColor
@@ -229,20 +237,42 @@ class TimeTableViewController: UIViewController {
             }
         }
         var countValue = 0
-//        for i in 0..<timeTableLectureArray.count{
-//            let newArray = convertTimeInfo(timeTableLectureArray[i].lec_time as! [String])
-//            for item in newArray{
-//                viewArray[item/10-1][item%10-1].backgroundColor = ColorArray[countValue]
-//                viewArray[item/10-1][item%10-1].layer.borderWidth = 0
-//                titleLabelArray[item/10-1][item%10-1].text = timeTableLectureArray[i].lec_name
-//                subLabelArray[item/10-1][item%10-1].text = timeTableLectureArray[i].lec_location
-//
-//            }
-//            countValue += 1
-//            if countValue > ColorArray.count-1{
-//                countValue = ColorArray.count - 1
-//            }
-//        }
+        for i in 0..<timeTableLectureArray.count{
+            let newArray = convertTimeInfo(timeTableLectureArray[i].lec_time as! [String])
+            for item in newArray{
+                let yoil : Int = item/10-1
+                let gyosi : Int = item%10-1
+                var valueBool : Bool = true
+                if viewArray[yoil][gyosi].backgroundColor == UIColor.white {
+                    for j in newArray{
+                        if item-1 == j{
+                            valueBool = false
+                        }
+                    }
+                    if valueBool {
+                        if titleLabelArray[yoil][gyosi].text == ""{
+                            titleLabelArray[yoil][gyosi].text = timeTableLectureArray[i].lec_name
+                            if gyosi < 6 {
+                                titleLabelArray[yoil][gyosi].numberOfLines = 2
+                            }else{
+                                titleLabelArray[yoil][gyosi].numberOfLines = 1
+                            }
+                            subLabelArray[yoil][gyosi].text = timeTableLectureArray[i].lec_location
+                            subLabelArray[yoil][gyosi].adjustsFontSizeToFitWidth = true
+                        }
+                    }
+                }else{
+                    titleLabelArray[yoil][gyosi].text = "강의중복"
+                    subLabelArray[yoil][gyosi].text = ""
+                }
+                viewArray[yoil][gyosi].backgroundColor = ColorArray[countValue]
+                viewArray[yoil][gyosi].layer.borderWidth = 0
+            }
+            countValue += 1
+            if countValue > ColorArray.count-1{
+                countValue = ColorArray.count - 1
+            }
+        }
 
     }
 
