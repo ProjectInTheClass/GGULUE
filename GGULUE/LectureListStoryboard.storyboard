@@ -315,6 +315,10 @@
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR2-Nj-2ph">
                                 <rect key="frame" x="0.0" y="64" width="414" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="PMg-nE-7TG"/>
+                                    <constraint firstAttribute="width" constant="414" id="fW1-mA-qOP"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="MdB-m7-UDt" kind="embed" id="rcX-q9-UnB"/>
                                 </connections>
@@ -333,6 +337,7 @@
                             <constraint firstItem="PHs-9H-STO" firstAttribute="top" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="10" id="mFM-6P-Yjo"/>
                             <constraint firstItem="TR2-Nj-2ph" firstAttribute="centerX" secondItem="PHs-9H-STO" secondAttribute="centerX" id="nAb-bk-5bO"/>
                             <constraint firstAttribute="bottom" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="344" id="p8a-Vy-twi"/>
+                            <constraint firstItem="TR2-Nj-2ph" firstAttribute="trailing" secondItem="eVR-P4-vE6" secondAttribute="trailing" id="ztk-du-TWj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eVR-P4-vE6"/>
                     </view>
@@ -359,6 +364,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NtT-Qr-PAK"/>
                     </view>
+                    <size key="freeformSize" width="414" height="328"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z32-Ix-BQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,6 +397,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hvi-Ad-6XZ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3L-d0-612" userLabel="First Responder" sceneMemberID="firstResponder"/>

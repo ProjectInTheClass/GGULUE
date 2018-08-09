@@ -20,7 +20,7 @@ class RadarChartViewController: UIViewController, TKRadarChartDataSource, TKRada
         chart.configuration.radius = w/3
         chart.dataSource = self
         chart.delegate = self
-        chart.center = view.center
+//        chart.center = view.center
         chart.reloadData()
         view.addSubview(chart)
     }
@@ -49,19 +49,19 @@ class RadarChartViewController: UIViewController, TKRadarChartDataSource, TKRada
     
     
     func colorOfLineForRadarChart(_ radarChart: TKRadarChart) -> UIColor {
-        return UIColor(red:0.337,  green:0.847,  blue:0.976, alpha:1)
+        return UIColor(red:1,  green:200/255,  blue:100/255, alpha:1)
     }
     
     func colorOfFillStepForRadarChart(_ radarChart: TKRadarChart, step: Int) -> UIColor {
         switch step {
         case 1:
-            return UIColor(red:0.545,  green:0.906,  blue:0.996, alpha:1)
+            return UIColor(red:0.996,  green:0.806,  blue:0.345, alpha:1)
         case 2:
-            return UIColor(red:0.706,  green:0.929,  blue:0.988, alpha:1)
+            return UIColor(red:0.988,  green:0.829,  blue:0.506, alpha:1)
         case 3:
-            return UIColor(red:0.831,  green:0.949,  blue:0.984, alpha:1)
+            return UIColor(red:0.984,  green:0.849,  blue:0.631, alpha:1)
         case 4:
-            return UIColor(red:0.922,  green:0.976,  blue:0.988, alpha:1)
+            return UIColor(red:0.988,  green:0.876,  blue:0.722, alpha:1)
         default:
             return UIColor.white
         }
@@ -69,7 +69,7 @@ class RadarChartViewController: UIViewController, TKRadarChartDataSource, TKRada
     
     func colorOfSectionFillForRadarChart(_ radarChart: TKRadarChart, section: Int) -> UIColor {
         if section == 0 {
-            return UIColor(red:1,  green:0.867,  blue:0.012, alpha:0.4)
+            return UIColor(red:1,  green:127/255,  blue:0, alpha:0.4)
         } else {
             return UIColor(red:0,  green:0.788,  blue:0.543, alpha:0.4)
         }
@@ -84,6 +84,6 @@ class RadarChartViewController: UIViewController, TKRadarChartDataSource, TKRada
     }
     
     func fontOfTitleForRadarChart(_ radarChart: TKRadarChart) -> UIFont {
-        return UIFont.systemFont(ofSize: 10)
+        return UIFont.systemFont(ofSize: 14)
     }
 }
