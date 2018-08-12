@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Favorite List View Controller-->
+        <!--내가 찜한 강의-->
         <scene sceneID="FRG-q3-G0c">
             <objects>
                 <viewController id="VJX-kg-4yy" customClass="FavoriteListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rGr-2o-Db2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Nyz-d2-w9U"/>
+                    <navigationItem key="navigationItem" title="내가 찜한 강의" id="Nyz-d2-w9U"/>
                     <connections>
                         <outlet property="favoriteLecutureTable" destination="a6f-wS-7jn" id="0kv-jQ-cMS"/>
                     </connections>

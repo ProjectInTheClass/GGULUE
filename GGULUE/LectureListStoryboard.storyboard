@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="1489.8550724637682" y="-564.13043478260875"/>
         </scene>
-        <!--Lecture List View Controller-->
+        <!--꿀루-->
         <scene sceneID="ak0-UX-xWf">
             <objects>
                 <viewController id="8Ox-C7-Rd0" customClass="LectureListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,8 +93,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Tj-sRM">
-                                <rect key="frame" x="0.0" y="129" width="414" height="558"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-1x-O70">
+                                <rect key="frame" x="20" y="72" width="186" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="꿀강">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeGood:" destination="8Ox-C7-Rd0" eventType="touchUpInside" id="Q7A-52-cVk"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Tj-sRM">
+                                <rect key="frame" x="0.0" y="128" width="414" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LectureCell" textLabel="tXw-Q2-dJQ" detailTextLabel="5We-FV-Bp9" style="IBUITableViewCellStyleValue1" id="Ugi-Yq-Iwf">
@@ -129,42 +140,27 @@
                                     <outlet property="dataSource" destination="8Ox-C7-Rd0" id="dto-Yv-rdP"/>
                                 </connections>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ftQ-1Q-vgB">
-                                <rect key="frame" x="0.0" y="84" width="414" height="42"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-1x-O70">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="꿀강"/>
-                                        <connections>
-                                            <action selector="changeGood:" destination="8Ox-C7-Rd0" eventType="touchUpInside" id="Q7A-52-cVk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-08-D2V">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="헬강"/>
-                                        <connections>
-                                            <action selector="changeBad:" destination="8Ox-C7-Rd0" eventType="touchUpInside" id="A4q-r6-GPh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-08-D2V">
+                                <rect key="frame" x="214" y="72" width="170" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="헬강">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeBad:" destination="8Ox-C7-Rd0" eventType="touchUpInside" id="A4q-r6-GPh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ftQ-1Q-vgB" firstAttribute="leading" secondItem="WeC-Tj-sRM" secondAttribute="leading" id="0OH-tR-eBb"/>
-                            <constraint firstItem="ftQ-1Q-vgB" firstAttribute="leading" secondItem="30r-EC-VGR" secondAttribute="leading" id="9QV-aS-KkS"/>
-                            <constraint firstItem="30r-EC-VGR" firstAttribute="trailing" secondItem="ftQ-1Q-vgB" secondAttribute="trailing" id="E3G-UB-aY7"/>
                             <constraint firstItem="30r-EC-VGR" firstAttribute="bottom" secondItem="WeC-Tj-sRM" secondAttribute="bottom" constant="49" id="Ja4-bB-UHa"/>
-                            <constraint firstItem="WeC-Tj-sRM" firstAttribute="top" secondItem="ftQ-1Q-vgB" secondAttribute="bottom" constant="3" id="XGh-59-odh"/>
-                            <constraint firstItem="ftQ-1Q-vgB" firstAttribute="top" secondItem="30r-EC-VGR" secondAttribute="top" constant="20" id="ZhK-ce-l73"/>
-                            <constraint firstItem="ftQ-1Q-vgB" firstAttribute="trailing" secondItem="WeC-Tj-sRM" secondAttribute="trailing" id="vXB-qs-2QJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="30r-EC-VGR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GyM-Og-2A1">
-                        <barButtonItem key="rightBarButtonItem" title="전체강의검색" id="UxA-A9-RCa">
+                    <navigationItem key="navigationItem" title="꿀루" id="GyM-Og-2A1">
+                        <barButtonItem key="rightBarButtonItem" title="전체 강의" id="UxA-A9-RCa">
+                            <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="azb-5C-aqT" kind="show" id="ofz-Xj-RZP"/>
                             </connections>
@@ -389,26 +385,12 @@
             </objects>
             <point key="canvasLocation" x="632.79999999999995" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="L2N-ay-VO9">
-            <objects>
-                <viewController id="j7C-fv-koy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sQJ-iD-Fcx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Hvi-Ad-6XZ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a3L-d0-612" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="btn_like_default" width="640" height="320"/>
         <image name="btn_like_selected" width="960" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p4n-o9-eZu"/>
+        <segue reference="a8T-cE-v6G"/>
     </inferredMetricsTieBreakers>
 </document>
