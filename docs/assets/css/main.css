@@ -3470,15 +3470,15 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #ff785c;
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #ffb360;
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #ff8b61;
 		}
 
 		#banner.style4:after {
@@ -3568,7 +3568,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #ffd9b3;
 	}
 
 		#main > * {
