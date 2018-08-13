@@ -101,7 +101,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_addTimeTable_add" width="256" height="256"/>
-        <image name="btn_addTimeTable_delete" width="256" height="256"/>
+        <image name="btn_addTimeTable_add" width="64" height="64"/>
+        <image name="btn_addTimeTable_delete" width="64" height="64"/>
     </resources>
 </document>

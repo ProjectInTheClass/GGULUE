@@ -13,7 +13,11 @@
         <scene sceneID="yWi-eI-YbD">
             <objects>
                 <viewControllerPlaceholder storyboardName="FavoriteStoryboard" referencedIdentifier="FavoriteList" id="2JK-tr-53w" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="찜 목록" image="tab bar 2" badgeValue="3" selectedImage="tab bar 2" id="tpd-5m-zvJ"/>
+=======
+                    <tabBarItem key="tabBarItem" title="Item" id="tpd-5m-zvJ"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyD-iU-f8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -23,7 +27,7 @@
         <scene sceneID="Mu6-I5-khh">
             <objects>
                 <viewControllerPlaceholder storyboardName="algorithmStoryboard" referencedIdentifier="algorithmView" id="Rpt-QB-blh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="알고리즘" image="tab bar 4" id="JU3-WM-nHr"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="JU3-WM-nHr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhX-wZ-82Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +60,7 @@
         <scene sceneID="aYw-au-uy2">
             <objects>
                 <viewControllerPlaceholder storyboardName="TimeTableStoryboard" referencedIdentifier="TimeTableView" id="oem-dF-SXt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="시간표" image="tab bar 3" selectedImage="list" id="e4D-Lh-ZV6"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="e4D-Lh-ZV6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBK-hK-A5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,20 +70,17 @@
         <scene sceneID="0at-Vj-DjW">
             <objects>
                 <viewControllerPlaceholder storyboardName="LectureListStoryboard" referencedIdentifier="LectureList" id="dNh-WF-tEh" sceneMemberID="viewController">
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="강의 목록" image="tab bar 1" id="ZvD-Sl-z5E">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+=======
+                    <tabBarItem key="tabBarItem" title="Item" id="ZvD-Sl-z5E"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6D-dO-Ixl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-720" y="569"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="list" width="256" height="256"/>
-        <image name="tab bar 1" width="25" height="25"/>
-        <image name="tab bar 2" width="25" height="25"/>
-        <image name="tab bar 3" width="25" height="25"/>
-        <image name="tab bar 4" width="25" height="25"/>
-    </resources>
 </document>
