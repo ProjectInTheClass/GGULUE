@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -60,7 +60,7 @@
 		2AA802FC9C73A695A26C8B0FA1DAE4FB /* Pods-GGULUE-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GGULUE-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2EAA54C462C479BA4B7B9CF4CD1D7388 /* Pods-GGULUE-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUE-resources.sh"; sourceTree = "<group>"; };
 		3D34754539AC0038ADFF06796165A790 /* TKRadarChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TKRadarChart.modulemap; sourceTree = "<group>"; };
-		3F4F7AAB8333CD0D5CE210B13AB9D88B /* TKRadarChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TKRadarChart.framework; path = TKRadarChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4F7AAB8333CD0D5CE210B13AB9D88B /* TKRadarChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKRadarChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BFCF73AE7DDAF2489FA2FA8DBE070F /* Pods-GGULUE-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUE-frameworks.sh"; sourceTree = "<group>"; };
 		455889A1BB674CA06EE30A001D771EEE /* TKRadarChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TKRadarChart.xcconfig; sourceTree = "<group>"; };
 		550F96C9FEDE54761F106AB87BA85CBE /* Pods-GGULUEUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUEUITests-resources.sh"; sourceTree = "<group>"; };
@@ -71,23 +71,23 @@
 		903623703356DB412404830526EFCF46 /* Pods-GGULUEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUEUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91E021DA1D0D80432A03282E99238191 /* Pods-GGULUE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUE.release.xcconfig"; sourceTree = "<group>"; };
 		925A64AF7D3569C8BDAB11BFD227DB3F /* TKRadarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TKRadarChart.swift; path = TKRadarChart/TKRadarChart.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0D23D45558DB45B190F539A37166043 /* TKRadarChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TKRadarChart-prefix.pch"; sourceTree = "<group>"; };
 		A292C387E48225A8CE6592FB17A9BCCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE16164573CE75204FB718EE346EE56B /* Pods-GGULUEUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GGULUEUITests-umbrella.h"; sourceTree = "<group>"; };
-		B04042E1D768BC356FFADE30CB79E5FF /* Pods_GGULUE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGULUE.framework; path = "Pods-GGULUE.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04042E1D768BC356FFADE30CB79E5FF /* Pods_GGULUE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGULUE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1D94DA776CFFE4E7F3CD1133A228E1 /* Pods-GGULUETests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUETests-resources.sh"; sourceTree = "<group>"; };
 		BC61FE262EAE9FB427598DDF5E8F02CC /* Pods-GGULUE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUE.debug.xcconfig"; sourceTree = "<group>"; };
 		C4007C89A3AA4D93B653B005511F4345 /* Pods-GGULUETests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GGULUETests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C812957B47FA76054DF7E48D6D2FA156 /* Pods-GGULUETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GGULUETests.release.xcconfig"; sourceTree = "<group>"; };
-		C84BB0D86737BC2CDE821C906B7FD0F7 /* Pods_GGULUETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGULUETests.framework; path = "Pods-GGULUETests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84BB0D86737BC2CDE821C906B7FD0F7 /* Pods_GGULUETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGULUETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C907F93CCFD307C42EEECB34DB4A57CA /* Pods-GGULUETests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GGULUETests-frameworks.sh"; sourceTree = "<group>"; };
 		D9F1F828746A997EE9E7BEF702B08785 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBEF353DB6272DAC8059CBF64CAFA1F2 /* TKRadarChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TKRadarChart-dummy.m"; sourceTree = "<group>"; };
 		DCB13F7B93CE8086FB33F8DD63B24E10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E111169E46BA03C47FEFA3F9B095A1A9 /* Pods-GGULUEUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGULUEUITests.modulemap"; sourceTree = "<group>"; };
 		E9014E80C31DD45406712628A2107471 /* Pods-GGULUE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GGULUE.modulemap"; sourceTree = "<group>"; };
-		F8593A749FAFA99C22537EABC14610D9 /* Pods_GGULUEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GGULUEUITests.framework; path = "Pods-GGULUEUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8593A749FAFA99C22537EABC14610D9 /* Pods_GGULUEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGULUEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF5170E048C7CE8F8BC023D1085268F /* TKRadarChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TKRadarChart-umbrella.h"; sourceTree = "<group>"; };
 		FCE2065D2A98270653BF2B38F68CBCD3 /* Pods-GGULUETests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GGULUETests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,7 +258,6 @@
 				925A64AF7D3569C8BDAB11BFD227DB3F /* TKRadarChart.swift */,
 				0F2EEA6EFC88E5489A189DBD2E05C803 /* Support Files */,
 			);
-			name = TKRadarChart;
 			path = TKRadarChart;
 			sourceTree = "<group>";
 		};
@@ -378,7 +377,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -476,11 +475,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-GGULUE/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GGULUE/Pods-GGULUE.modulemap";
 				OTHER_LDFLAGS = "";
@@ -516,11 +511,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-GGULUE/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GGULUE/Pods-GGULUE.modulemap";
 				OTHER_LDFLAGS = "";
@@ -618,11 +609,7 @@
 				INFOPLIST_FILE = "Target Support Files/TKRadarChart/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TKRadarChart/TKRadarChart.modulemap";
 				PRODUCT_MODULE_NAME = TKRadarChart;
 				PRODUCT_NAME = TKRadarChart;
@@ -656,11 +643,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-GGULUEUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GGULUEUITests/Pods-GGULUEUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -695,11 +678,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-GGULUEUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GGULUEUITests/Pods-GGULUEUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -769,6 +748,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -790,11 +770,7 @@
 				INFOPLIST_FILE = "Target Support Files/TKRadarChart/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TKRadarChart/TKRadarChart.modulemap";
 				PRODUCT_MODULE_NAME = TKRadarChart;
 				PRODUCT_NAME = TKRadarChart;
@@ -827,11 +803,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-GGULUETests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GGULUETests/Pods-GGULUETests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -865,11 +837,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-GGULUETests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GGULUETests/Pods-GGULUETests.modulemap";
 				OTHER_LDFLAGS = "";

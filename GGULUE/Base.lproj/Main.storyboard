@@ -13,7 +13,7 @@
         <scene sceneID="yWi-eI-YbD">
             <objects>
                 <viewControllerPlaceholder storyboardName="FavoriteStoryboard" referencedIdentifier="FavoriteList" id="2JK-tr-53w" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="찜 목록" image="tab bar 2" badgeValue="3" id="tpd-5m-zvJ"/>
+                    <tabBarItem key="tabBarItem" title="찜 목록" image="tab bar 2" badgeValue="3" selectedImage="tab bar 2" id="tpd-5m-zvJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyD-iU-f8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MKh-VJ-zcz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="dNh-WF-tEh" kind="relationship" relationship="viewControllers" id="vgX-R5-t8d"/>
@@ -63,7 +66,9 @@
         <scene sceneID="0at-Vj-DjW">
             <objects>
                 <viewControllerPlaceholder storyboardName="LectureListStoryboard" referencedIdentifier="LectureList" id="dNh-WF-tEh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="강의 목록" image="tab bar 1" id="ZvD-Sl-z5E"/>
+                    <tabBarItem key="tabBarItem" title="강의 목록" image="tab bar 1" id="ZvD-Sl-z5E">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6D-dO-Ixl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

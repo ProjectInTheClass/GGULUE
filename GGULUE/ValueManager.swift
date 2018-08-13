@@ -165,8 +165,8 @@ func makeLecture(_ data : [String : Any], _ scoreData : [KlueData]) -> [Lecture]
 
 
 
-let filePath = "/Users/kyh/Downloads/ggulue-d3d2c-gyoyang-export.json"
-let filePath2 = "/Users/kyh/Downloads/ggulue-d3d2c-klue-export.json"
+let filePath = "/Users/eujeongsmacbookpro/GGULUE/ggulue-d3d2c-gyoyang-export.json"
+let filePath2 = "/Users/eujeongsmacbookpro/GGULUE/ggulue-d3d2c-klue-export.json"
 let data2 = try! String(contentsOfFile: filePath2).data(using: .utf8)
 let kluedata = try! JSONSerialization.jsonObject(with: data2!, options: []) as! [String:Any]
 let kluedataArray = makeKlueData(kluedata)
