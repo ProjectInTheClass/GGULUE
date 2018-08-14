@@ -12,6 +12,9 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
     var data  = allLectureArray
     var filteredArray : [Lecture] = []
     
+
+    
+    
     @IBOutlet weak var allLectureTable: UITableView!
     @IBOutlet weak var allLectureSearchBar: UISearchBar!
     
@@ -23,12 +26,12 @@ class AllLectureViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AllLectureCell", for: indexPath)
-        cell.textLabel?.text = "\(filteredArray[indexPath.row].lec_name!), \(filteredArray[indexPath.row].lec_prof!) 교수"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AllLectureCell", for: indexPath) as! CustomTableViewCell1
+        cell.allTitle?.text = "\(filteredArray[indexPath.row].lec_name!), \(filteredArray[indexPath.row].lec_prof!) 교수"
         if filteredArray[indexPath.row].self_score == -1{
-            cell.detailTextLabel?.text = "평가없음"
+            cell.allDetail?.text = "평가없음"
         }else{
-            cell.detailTextLabel?.text = "\(round(filteredArray[indexPath.row].self_score*100)/100)"
+            cell.allDetail?.text = "\(round(filteredArray[indexPath.row].self_score*100)/100)"
         }
         return cell
     }

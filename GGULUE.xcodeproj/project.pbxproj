@@ -29,6 +29,9 @@
 		15D530762108E34900090039 /* ValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D530752108E34900090039 /* ValueManager.swift */; };
 		15D530782108FD4700090039 /* LectureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D530772108FD4700090039 /* LectureDetailViewController.swift */; };
 		15E780822111A46A002C76C6 /* AllLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E780812111A46A002C76C6 /* AllLectureViewController.swift */; };
+		190F4F06212194E700C79D36 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F4F05212194E700C79D36 /* PageViewController.swift */; };
+		190F4F082121964300C79D36 /* WordCloudController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F4F072121964300C79D36 /* WordCloudController.swift */; };
+		190F4F0A2121AF9400C79D36 /* CustomTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190F4F092121AF9400C79D36 /* CustomTableViewCell1.swift */; };
 		24B0746FB1301B7A08B77B24 /* Pods_GGULUE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F7BCC9C1C0AA3A1FB8491E /* Pods_GGULUE.framework */; };
 		73029644093F7E0CCB0748FB /* Pods_GGULUETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C59D937663E92A59D9800 /* Pods_GGULUETests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +81,9 @@
 		15D530752108E34900090039 /* ValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueManager.swift; sourceTree = "<group>"; };
 		15D530772108FD4700090039 /* LectureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureDetailViewController.swift; sourceTree = "<group>"; };
 		15E780812111A46A002C76C6 /* AllLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLectureViewController.swift; sourceTree = "<group>"; };
+		190F4F05212194E700C79D36 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		190F4F072121964300C79D36 /* WordCloudController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCloudController.swift; sourceTree = "<group>"; };
+		190F4F092121AF9400C79D36 /* CustomTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell1.swift; sourceTree = "<group>"; };
 		53F7BCC9C1C0AA3A1FB8491E /* Pods_GGULUE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGULUE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59891913DDAC69F2781ED064 /* Pods-GGULUEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGULUEUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGULUEUITests/Pods-GGULUEUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D78C5892488D8C4B2AC6E05 /* Pods-GGULUE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGULUE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGULUE/Pods-GGULUE.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +156,9 @@
 				159C9DC3210F8629007E808C /* algorithmStoryboard.storyboard */,
 				159C9DBF210F7CA8007E808C /* FavoriteStoryboard.storyboard */,
 				159C9DBD210F7883007E808C /* LectureListStoryboard.storyboard */,
+				190F4F05212194E700C79D36 /* PageViewController.swift */,
 				15AC7B2B211C12EC00462680 /* RadarChartViewController.swift */,
+				190F4F072121964300C79D36 /* WordCloudController.swift */,
 				156AD21521142C7300732D98 /* FavoriteTableViewCell.swift */,
 				15E780812111A46A002C76C6 /* AllLectureViewController.swift */,
 				15A14454210FA781000CE2F9 /* TimeTableViewController.swift */,
@@ -162,6 +170,7 @@
 				15D5304C2108DF8300090039 /* Assets.xcassets */,
 				15D5304E2108DF8300090039 /* LaunchScreen.storyboard */,
 				15D530512108DF8300090039 /* Info.plist */,
+				190F4F092121AF9400C79D36 /* CustomTableViewCell1.swift */,
 			);
 			path = GGULUE;
 			sourceTree = "<group>";
@@ -430,7 +439,10 @@
 				15D530482108DF6200090039 /* ViewController.swift in Sources */,
 				15A14455210FA781000CE2F9 /* TimeTableViewController.swift in Sources */,
 				15AC7B2C211C12EC00462680 /* RadarChartViewController.swift in Sources */,
+				190F4F0A2121AF9400C79D36 /* CustomTableViewCell1.swift in Sources */,
+				190F4F082121964300C79D36 /* WordCloudController.swift in Sources */,
 				15AC7B2A211C123700462680 /* TKRadarChart.swift in Sources */,
+				190F4F06212194E700C79D36 /* PageViewController.swift in Sources */,
 				15D530462108DF6200090039 /* AppDelegate.swift in Sources */,
 				156AD21621142C7300732D98 /* FavoriteTableViewCell.swift in Sources */,
 			);

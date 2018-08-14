@@ -43,8 +43,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="dNh-WF-tEh" kind="relationship" relationship="viewControllers" id="vgX-R5-t8d"/>
-                        <segue destination="oem-dF-SXt" kind="relationship" relationship="viewControllers" id="yr9-Hu-2fi"/>
                         <segue destination="2JK-tr-53w" kind="relationship" relationship="viewControllers" id="NGl-F7-g0x"/>
+                        <segue destination="oem-dF-SXt" kind="relationship" relationship="viewControllers" id="yr9-Hu-2fi"/>
                         <segue destination="Rpt-QB-blh" kind="relationship" relationship="viewControllers" id="i7y-UX-Lax"/>
                     </connections>
                 </tabBarController>
@@ -56,7 +56,7 @@
         <scene sceneID="aYw-au-uy2">
             <objects>
                 <viewControllerPlaceholder storyboardName="TimeTableStoryboard" referencedIdentifier="TimeTableView" id="oem-dF-SXt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="시간표" image="tab bar 3" selectedImage="list" id="e4D-Lh-ZV6"/>
+                    <tabBarItem key="tabBarItem" title="시간표" image="tab bar 3" id="e4D-Lh-ZV6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBK-hK-A5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list" width="256" height="256"/>
         <image name="tab bar 1" width="25" height="25"/>
         <image name="tab bar 2" width="25" height="25"/>
         <image name="tab bar 3" width="25" height="25"/>

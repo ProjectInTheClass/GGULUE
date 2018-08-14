@@ -80,11 +80,11 @@
             </objects>
             <point key="canvasLocation" x="1166" y="-767"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--찜 목록-->
         <scene sceneID="lXZ-Ao-EyG">
             <objects>
                 <navigationController storyboardIdentifier="FavoriteList" automaticallyAdjustsScrollViewInsets="NO" id="6Km-5h-1NW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="ezm-eB-xi5"/>
+                    <tabBarItem key="tabBarItem" title="찜 목록" image="tab bar 2" id="ezm-eB-xi5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tha-eF-VSF">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -103,5 +103,6 @@
     <resources>
         <image name="btn_addTimeTable_add" width="256" height="256"/>
         <image name="btn_addTimeTable_delete" width="256" height="256"/>
+        <image name="tab bar 2" width="25" height="25"/>
     </resources>
 </document>

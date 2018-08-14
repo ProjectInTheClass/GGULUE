@@ -30,32 +30,28 @@ struct Lecture {
     
     //알고리즘에 따라 점수계산
     mutating func cal_total(_ b:CalculatorStandard) -> Lecture{
-        var temp: Double = 0
         var tempArray : [Double] = []
         var temp2 : Double = 0
-        temp = b.r_attendence+b.r_grade+b.r_level+b.r_amount+b.r_achi
-        if temp == 1{
-            for i in self.fivescore{
-                if i[0] != -1{
-                    var result : Double = 0
-                    result += (i[0]!*b.r_attendence)
-                    result += (i[1]!*b.r_level)
-                    result += (i[2]!*b.r_amount)
-                    result += (i[3]!*b.r_grade)
-                    result += (i[4]!*b.r_achi)
-                    tempArray.append(result)
-                }
+        for i in self.fivescore{
+            if i[0] != -1{
+                var result : Double = 0
+                result += (i[0]!*b.r_attendence)
+                result += (i[1]!*b.r_level)
+                result += (i[2]!*b.r_amount)
+                result += (i[3]!*b.r_grade)
+                result += (i[4]!*b.r_achi)
+                tempArray.append(result)
             }
-            for j in tempArray{
-                temp2 += j
-            }
-            if tempArray.count != 0{
-                temp2 = temp2/Double(tempArray.count)
-            }else{
-                temp2 = -1
-            }
-            self.self_score = temp2
         }
+        for j in tempArray{
+            temp2 += j
+        }
+        if tempArray.count != 0{
+            temp2 = temp2/Double(tempArray.count)
+        }else{
+            temp2 = -1
+        }
+        self.self_score = temp2
         return self
     }
 }
@@ -176,33 +172,6 @@ let lecturedata = try! JSONSerialization.jsonObject(with: data!, options: []) as
 let lectureDataArray = makeLecture(lecturedata, kluedataArray)
 
 
-//강의 구조체
-//struct Lecture {
-//    let star_score: Double
-//    var scoreList : [[Double]]
-//    var self_score: Double
-//
-//    let lec_name: String
-//    let lec_prof: String
-//    let lec_location: String
-//    let lec_time: [String]
-//    //let lec_lectureNumber : String
-//    //let lec_class:String
-//
-//
-//
-//    //알고리즘에 따라 점수계산
-//    mutating func cal_total(_ b:CalculatorStandard) -> Lecture{
-//        var result : Double = 0
-//        var temp: Double = 0
-//        temp = b.r_attendence+b.r_grade+b.r_level+b.r_amount+b.r_achi
-//        if temp == 1{
-//            result = (self.scoreList[0][0]*b.r_attendence)+(self.scoreList[0][1]*b.r_level)+(self.scoreList[0][2]*b.r_amount)+(self.scoreList[0][3]*b.r_grade)+(self.scoreList[0][4]*b.r_achi)
-//            self.self_score = result
-//        }
-//        return self
-//    }
-//}
 
 
 //알고리즘 계산
@@ -323,7 +292,7 @@ var confirmLectureArray : [String] = []      //compare with favoriteLectureArray
 var timeTableLectureArray : [Lecture] = []
 var confirmLectureArray2 : [String] = []    //compare with timeTableLectureArray
 var rateList : [Float] = [0.2, 0.2, 0.2, 0.2, 0.2]
-var realList : [Float] = [1, 1, 1, 1, 1]
+var realList : [Float] = [0.215, 0.81, 0.215, 0.215, 0.81]
 
 
 

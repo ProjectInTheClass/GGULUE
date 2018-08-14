@@ -69,7 +69,7 @@ class LectureDetailViewController: UIViewController {
         if selectedLecture?.self_score == -1{
             lec_scoreLabel.text = "강의평가 정보가 없습니다."
         }else{
-            lec_scoreLabel.text = "\(selectedLecture?.self_score ?? 0)점"
+            lec_scoreLabel.text = "\(round((selectedLecture?.self_score)!*100)/100)점"
             
         }
         let valueString = selectedLecture?.lec_name
@@ -89,7 +89,8 @@ class LectureDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let chartVC = self.childViewControllers[0] as! RadarChartViewController
+        let chartVC = self.childViewControllers[0] as! PageViewController
+        
         chartVC.selectedLecture = selectedLecture
         // Do any additional setup after loading the view.
     }

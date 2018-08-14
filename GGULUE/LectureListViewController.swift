@@ -14,11 +14,15 @@ class LectureListViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var badLectureButton: UIButton!
     @IBAction func changeGood(_ sender: Any) {
         tableLectureArray = mergeSort(re_calculate(lectureArray, self_cal), "DOWN")
+        goodLectureButton.isSelected = true
+        badLectureButton.isSelected = false
         lectureTable.reloadData()
         goodBad = 0
     }
     @IBAction func changeBad(_ sender: Any) {
         tableLectureArray = mergeSort(re_calculate(lectureArray, self_cal), "UP")
+        goodLectureButton.isSelected = false
+        badLectureButton.isSelected = true
         lectureTable.reloadData()
         goodBad = 1
     }
@@ -68,8 +72,15 @@ class LectureListViewController: UIViewController, UITableViewDataSource {
         switch goodBad {
         case 0:
             tableLectureArray = mergeSort(re_calculate(lectureArray, self_cal), "DOWN")
+            goodLectureButton.isSelected = true
+            badLectureButton.isSelected = false
         default:
             tableLectureArray = mergeSort(re_calculate(lectureArray, self_cal), "UP")
+            goodLectureButton.isSelected = false
+            badLectureButton.isSelected = true
+        }
+        for i in tableLectureArray{
+            print(i.self_score)
         }
         lectureTable.reloadData()
     }

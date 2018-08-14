@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Time Table View Controller-->
+        <!--시간표-->
         <scene sceneID="lTI-5U-Xtr">
             <objects>
                 <viewController storyboardIdentifier="TimeTableView" id="wmY-Fj-1ag" customClass="TimeTableViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
@@ -2112,7 +2112,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uLA-bW-vIV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="6lq-Tj-PIJ"/>
+                    <tabBarItem key="tabBarItem" title="시간표" image="tab bar 3" id="6lq-Tj-PIJ"/>
                     <connections>
                         <outlet property="fri1" destination="Q1z-bl-UPO" id="Wvg-c5-mxU"/>
                         <outlet property="fri1Sub" destination="WYh-a0-QcH" id="aXC-Ce-A0h"/>
@@ -2270,4 +2270,7 @@
             <point key="canvasLocation" x="-49.275362318840585" y="462.22826086956525"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab bar 3" width="25" height="25"/>
+    </resources>
 </document>

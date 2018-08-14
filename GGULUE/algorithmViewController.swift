@@ -39,40 +39,38 @@ class algorithmViewController: UIViewController {
     @IBOutlet weak var ac_slider: UISlider!
     @IBOutlet weak var le_slider: UISlider!
     
+    @IBAction func applyButton(_ sender: Any) {
+        self_cal =  changeAlgorithm(self_cal, rateList)
+    }
     @IBAction func attendenceSlider(_ sender: UISlider) {
-        attendenceLabel.text = "\(Int((sender.value-0.1)*100))%"
+        attendenceLabel.text = "\(Int((sender.value-0.01)*100))%"
         realList[0] = sender.value
-        rateList[0] = sender.value
-        rateList = calRate(rateList)
-        self_cal = changeAlgorithm(self_cal, rateList)
+        rateList = calRate(realList)
+
     }
     @IBAction func gradeSlider(_ sender: UISlider) {
-        gradeLabel.text = "\(Int((sender.value-0.1)*100))%"
+        gradeLabel.text = "\(Int((sender.value-0.01)*100))%"
         realList[1] = sender.value
-        rateList[1] = sender.value
-        rateList = calRate(rateList)
-        self_cal = changeAlgorithm(self_cal, rateList)
+        rateList = calRate(realList)
+
     }
     @IBAction func amountSlider(_ sender: UISlider) {
-        amountLabel.text = "\(Int((sender.value-0.1)*100))%"
+        amountLabel.text = "\(Int((sender.value-0.01)*100))%"
         realList[3] = sender.value
-        rateList[3] = sender.value
-        rateList = calRate(rateList)
-        self_cal = changeAlgorithm(self_cal, rateList)
+        rateList = calRate(realList)
+
     }
     @IBAction func achiSlider(_ sender: UISlider) {
-        achiLabel.text = "\(Int((sender.value-0.1)*100))%"
+        achiLabel.text = "\(Int((sender.value-0.01)*100))%"
         realList[4] = sender.value
-        rateList[4] = sender.value
-        rateList = calRate(rateList)
-        self_cal = changeAlgorithm(self_cal, rateList)
+        rateList = calRate(realList)
+
     }
     @IBAction func levelSlider(_ sender: UISlider) {
-        levelLabel.text = "\(Int((sender.value-0.1)*100))%"
+        levelLabel.text = "\(Int((sender.value-0.01)*100))%"
         realList[2] = sender.value
-        rateList[2] = sender.value
-        rateList = calRate(rateList)
-        self_cal = changeAlgorithm(self_cal, rateList)
+        rateList = calRate(realList)
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,16 +83,16 @@ class algorithmViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewWillAppear(_ animated: Bool) {
-        at_slider.setValue(realList[0]+0.1, animated: true)
-        gr_slider.setValue(realList[1]+0.1, animated: true)
-        le_slider.setValue(realList[2]+0.1, animated: true)
-        am_slider.setValue(realList[3]+0.1, animated: true)
-        ac_slider.setValue(realList[4]+0.1, animated: true)
-        attendenceLabel.text = "\(Int((at_slider.value-0.1)*100))%"
-        gradeLabel.text = "\(Int((gr_slider.value-0.1)*100))%"
-        levelLabel.text = "\(Int((le_slider.value-0.1)*100))%"
-        amountLabel.text = "\(Int((am_slider.value-0.1)*100))%"
-        achiLabel.text = "\(Int((ac_slider.value-0.1)*100))%"
+        at_slider.setValue(realList[0], animated: true)
+        gr_slider.setValue(realList[1], animated: true)
+        le_slider.setValue(realList[2], animated: true)
+        am_slider.setValue(realList[3], animated: true)
+        ac_slider.setValue(realList[4], animated: true)
+        attendenceLabel.text = "\(Int((at_slider.value-0.01)*100))%"
+        gradeLabel.text = "\(Int((gr_slider.value-0.01)*100))%"
+        levelLabel.text = "\(Int((le_slider.value-0.01)*100))%"
+        amountLabel.text = "\(Int((am_slider.value-0.01)*100))%"
+        achiLabel.text = "\(Int((ac_slider.value-0.01)*100))%"
     }
 
     /*
