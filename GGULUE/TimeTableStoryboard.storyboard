@@ -2092,7 +2092,7 @@
                                 <rect key="frame" x="0.0" y="16" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="내 시간표" id="1Js-3e-kgR"/>
+                                    <navigationItem title="시간표" id="1Js-3e-kgR"/>
                                 </items>
                             </navigationBar>
                         </subviews>

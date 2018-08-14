@@ -2,7 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+<<<<<<< HEAD
       "filename" : "활성화된 찜버튼.png",
+=======
+      "filename" : "buttons_PNG177.png",
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
       "scale" : "1x"
     },
     {

@@ -6,6 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+=======
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -87,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="1489.8550724637682" y="-564.13043478260875"/>
         </scene>
-        <!--강의 추천 목록-->
+        <!--꿀루-->
         <scene sceneID="ak0-UX-xWf">
             <objects>
                 <viewController id="8Ox-C7-Rd0" customClass="LectureListViewController" customModule="GGULUE" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,19 +102,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-1x-O70">
                                 <rect key="frame" x="0.0" y="73" width="210" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="꿀강     " backgroundImage="비활성화된 꿀강">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+=======
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-1x-O70">
+                                <rect key="frame" x="0.0" y="73" width="210" height="50"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YI-1x-O70">
+                                <rect key="frame" x="20" y="72" width="186" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="꿀강">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                 </state>
                                 <state key="selected" backgroundImage="활성화된 꿀강"/>
                                 <connections>
                                     <action selector="changeGood:" destination="8Ox-C7-Rd0" eventType="touchUpInside" id="Q7A-52-cVk"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Tj-sRM">
-                                <rect key="frame" x="0.0" y="123" width="414" height="564"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeC-Tj-sRM">
+                                <rect key="frame" x="0.0" y="128" width="414" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LectureCell" textLabel="tXw-Q2-dJQ" detailTextLabel="5We-FV-Bp9" style="IBUITableViewCellStyleValue1" id="Ugi-Yq-Iwf">
@@ -142,11 +163,21 @@
                                     <outlet property="dataSource" destination="8Ox-C7-Rd0" id="dto-Yv-rdP"/>
                                 </connections>
                             </tableView>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-08-D2V">
+=======
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-08-D2V">
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                 <rect key="frame" x="204" y="73" width="210" height="50"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-08-D2V">
+                                <rect key="frame" x="214" y="72" width="170" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="     헬강" backgroundImage="비활성화된 헬강">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="헬강">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="selected" backgroundImage="활성화된 헬강"/>
                                 <connections>
@@ -156,6 +187,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="WeC-Tj-sRM" firstAttribute="top" secondItem="aeG-08-D2V" secondAttribute="bottom" id="5Rl-56-VZP"/>
                             <constraint firstAttribute="trailing" secondItem="aeG-08-D2V" secondAttribute="trailing" id="7av-m4-Wxr"/>
                             <constraint firstItem="WeC-Tj-sRM" firstAttribute="top" secondItem="5YI-1x-O70" secondAttribute="bottom" id="ErV-mK-0T6"/>
@@ -170,10 +202,13 @@
                             <constraint firstItem="aeG-08-D2V" firstAttribute="trailing" secondItem="30r-EC-VGR" secondAttribute="trailing" id="wNg-OZ-UD9"/>
                             <constraint firstAttribute="trailing" secondItem="WeC-Tj-sRM" secondAttribute="trailing" id="zI6-RG-kL6"/>
                             <constraint firstItem="WeC-Tj-sRM" firstAttribute="top" secondItem="aeG-08-D2V" secondAttribute="bottom" id="zdx-xq-Rq1"/>
+=======
+                            <constraint firstItem="30r-EC-VGR" firstAttribute="bottom" secondItem="WeC-Tj-sRM" secondAttribute="bottom" constant="49" id="Ja4-bB-UHa"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="30r-EC-VGR"/>
                     </view>
-                    <navigationItem key="navigationItem" title="강의 추천 목록" id="GyM-Og-2A1">
+                    <navigationItem key="navigationItem" title="꿀루" id="GyM-Og-2A1">
                         <barButtonItem key="rightBarButtonItem" title="전체 강의" id="UxA-A9-RCa">
                             <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -199,8 +234,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-9H-STO">
                                 <rect key="frame" x="40" y="482" width="334" height="164"/>
+=======
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-9H-STO">
+<<<<<<< HEAD
+                                <rect key="frame" x="20.333333333333343" y="448" width="353.66666666666663" height="125"/>
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F2A-pO-IHK">
                                         <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="24.666666666666668"/>
@@ -208,56 +249,196 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lec name" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UJ-fz-b21">
                                                 <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="24.666666666666668"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+=======
+                                <rect key="frame" x="30" y="402" width="354" height="142"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F2A-pO-IHK">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.666666666666668"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강의명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Biy-6N-MbL">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.666666666666668"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="AYc-97-Qmn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UJ-fz-b21">
+                                                <rect key="frame" x="90" y="0.0" width="264" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-Xm-TpE">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="34.666666666666629" width="37.333333333333336" height="25"/>
+=======
+<<<<<<< HEAD
+                                        <rect key="frame" x="0.0" y="34" width="37.333333333333336" height="18"/>
+=======
+                                        <rect key="frame" x="0.0" y="30.666666666666686" width="354" height="20.333333333333329"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="교수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1O-C6-MUO">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="hdl-3i-Khp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvV-Fk-Qe6">
+<<<<<<< HEAD
                                                 <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="25"/>
+=======
+<<<<<<< HEAD
+                                                <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="18"/>
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+=======
+                                                <rect key="frame" x="90" y="0.0" width="264" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VHA-qH-2ND">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="69.666666666666629" width="37.333333333333336" height="24.666666666666671"/>
+=======
+<<<<<<< HEAD
+                                        <rect key="frame" x="0.0" y="62" width="31" height="14"/>
+=======
+                                        <rect key="frame" x="0.0" y="61.000000000000007" width="354" height="20.333333333333336"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강의실" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3O-HH-GFd">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="iT3-DF-tES"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLI-ib-b0J">
+<<<<<<< HEAD
                                                 <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="24.666666666666668"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+=======
+<<<<<<< HEAD
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="14"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+=======
+                                                <rect key="frame" x="90" y="0.0" width="264" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VJq-Ds-Rfq">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="104.33333333333337" width="37.333333333333336" height="25"/>
+=======
+<<<<<<< HEAD
+                                        <rect key="frame" x="0.0" y="86" width="31" height="15"/>
+=======
+                                        <rect key="frame" x="0.0" y="91.333333333333314" width="354" height="20.666666666666671"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수업시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AN-Tz-iER">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.666666666666668"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="UN5-6g-ofI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBM-tz-uqc">
+<<<<<<< HEAD
                                                 <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="25"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+=======
+<<<<<<< HEAD
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="15"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+=======
+                                                <rect key="frame" x="90" y="0.0" width="264" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y2a-x0-Z1h">
+<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="139.33333333333337" width="37.333333333333336" height="24.666666666666657"/>
+=======
+<<<<<<< HEAD
+                                        <rect key="frame" x="0.0" y="111" width="31" height="14"/>
+=======
+                                        <rect key="frame" x="0.0" y="122" width="354" height="20"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="평점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTo-gz-bcR">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="sZc-Ym-nGN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-hr-lDJ">
+<<<<<<< HEAD
                                                 <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="24.666666666666668"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+=======
+<<<<<<< HEAD
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="14"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+=======
+                                                <rect key="frame" x="90" y="0.0" width="264" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+<<<<<<< HEAD
+=======
+                                <constraints>
+<<<<<<< HEAD
+                                    <constraint firstItem="VJq-Ds-Rfq" firstAttribute="top" secondItem="VHA-qH-2ND" secondAttribute="bottom" constant="10" id="2ha-iL-8hd"/>
+                                    <constraint firstItem="VJq-Ds-Rfq" firstAttribute="top" secondItem="VHA-qH-2ND" secondAttribute="bottom" constant="10" id="Mpo-x4-RhF"/>
+                                    <constraint firstItem="y2a-x0-Z1h" firstAttribute="top" secondItem="VJq-Ds-Rfq" secondAttribute="bottom" constant="10" id="X7L-rm-eRK"/>
+                                    <constraint firstItem="VJq-Ds-Rfq" firstAttribute="top" secondItem="PHs-9H-STO" secondAttribute="top" constant="86" id="bOR-83-8OU"/>
+                                    <constraint firstItem="y2a-x0-Z1h" firstAttribute="top" secondItem="PHs-9H-STO" secondAttribute="top" constant="111" id="dUp-Ob-7we"/>
+                                    <constraint firstItem="2KF-Xm-TpE" firstAttribute="top" secondItem="F2A-pO-IHK" secondAttribute="bottom" constant="10" id="k5n-mk-Ruo"/>
+                                    <constraint firstItem="2KF-Xm-TpE" firstAttribute="top" secondItem="F2A-pO-IHK" secondAttribute="bottom" constant="10" id="mkx-k8-g97"/>
+                                    <constraint firstItem="VHA-qH-2ND" firstAttribute="top" secondItem="2KF-Xm-TpE" secondAttribute="bottom" constant="10" id="sk7-9s-qvx"/>
+                                </constraints>
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="출처: www.klue.kr/의 해당 과목 강의평가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnm-cy-zaZ">
                                 <rect key="frame" x="200.33333333333337" y="74" width="203.66666666666663" height="14.333333333333329"/>
@@ -265,12 +446,35 @@
                                 <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+=======
+                                    <constraint firstItem="y2a-x0-Z1h" firstAttribute="top" secondItem="PHs-9H-STO" secondAttribute="top" constant="122" id="13K-ff-1WN"/>
+                                    <constraint firstAttribute="trailing" secondItem="VHA-qH-2ND" secondAttribute="trailing" id="4Qa-Ui-dOR"/>
+                                    <constraint firstAttribute="trailing" secondItem="2KF-Xm-TpE" secondAttribute="trailing" id="A7S-rV-24T"/>
+                                    <constraint firstAttribute="trailing" secondItem="F2A-pO-IHK" secondAttribute="trailing" id="Hmd-JN-PhI"/>
+                                    <constraint firstItem="VHA-qH-2ND" firstAttribute="centerY" secondItem="PHs-9H-STO" secondAttribute="centerY" id="WNI-jt-MDP"/>
+                                    <constraint firstAttribute="trailing" secondItem="y2a-x0-Z1h" secondAttribute="trailing" id="jgU-j9-IhU"/>
+                                    <constraint firstAttribute="trailing" secondItem="VJq-Ds-Rfq" secondAttribute="trailing" id="rVe-52-Bhf"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGx-1O-ydl">
+                                <rect key="frame" x="86" y="551" width="242" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="BcR-0L-wGj"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_like_default"/>
+                                <state key="selected" image="btn_like_selected"/>
+                                <connections>
+                                    <action selector="handleAdd:" destination="kte-8z-507" eventType="touchUpInside" id="zrg-Gw-VSe"/>
+                                </connections>
+                            </button>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR2-Nj-2ph">
                                 <rect key="frame" x="0.0" y="92" width="414" height="340"/>
                                 <connections>
                                     <segue destination="OVk-g3-tN1" kind="embed" id="2YJ-mq-MNl"/>
                                 </connections>
                             </containerView>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGx-1O-ydl">
                                 <rect key="frame" x="132" y="666" width="150" height="50"/>
                                 <constraints>
@@ -284,17 +488,43 @@
                                 <state key="selected" title="찜 완료!" backgroundImage="btn_like_selected">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+=======
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGx-1O-ydl">
+                                <rect key="frame" x="132" y="612" width="150" height="50"/>
+                                <state key="normal" title="+찜하기" image="BACKGROUND"/>
+                                <state key="selected" image="btn_like_selected"/>
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                                 <connections>
                                     <action selector="handleAdd:" destination="kte-8z-507" eventType="touchUpInside" id="zrg-Gw-VSe"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+ 과목 찜하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUN-vf-Bi2">
+                                <rect key="frame" x="149" y="624" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+=======
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="PHs-9H-STO" firstAttribute="top" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="50" id="2WQ-FN-B5W"/>
                             <constraint firstItem="PHs-9H-STO" firstAttribute="leading" secondItem="eVR-P4-vE6" secondAttribute="leading" constant="40" id="4ZI-Yn-vJS"/>
                             <constraint firstItem="iGx-1O-ydl" firstAttribute="centerX" secondItem="qfh-Q3-3IP" secondAttribute="centerX" id="FqA-EU-DNd"/>
+=======
+<<<<<<< HEAD
+                            <constraint firstItem="PHs-9H-STO" firstAttribute="top" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="16" id="2WQ-FN-B5W"/>
+                            <constraint firstItem="eVR-P4-vE6" firstAttribute="bottom" secondItem="iGx-1O-ydl" secondAttribute="bottom" constant="111" id="7AE-FW-Qcu"/>
+                            <constraint firstItem="PHs-9H-STO" firstAttribute="leading" secondItem="qfh-Q3-3IP" secondAttribute="leadingMargin" id="AyM-I0-CzN"/>
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                             <constraint firstItem="eVR-P4-vE6" firstAttribute="trailing" secondItem="fnm-cy-zaZ" secondAttribute="trailing" constant="10" id="Fqk-gz-qi4"/>
                             <constraint firstAttribute="bottom" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="304" id="JGL-KR-tq9"/>
                             <constraint firstItem="fnm-cy-zaZ" firstAttribute="top" secondItem="eVR-P4-vE6" secondAttribute="top" constant="10" id="MKk-M6-oCs"/>
@@ -303,7 +533,23 @@
                             <constraint firstItem="eVR-P4-vE6" firstAttribute="bottom" secondItem="iGx-1O-ydl" secondAttribute="bottom" constant="20" id="egX-2F-XWU"/>
                             <constraint firstItem="iGx-1O-ydl" firstAttribute="top" secondItem="PHs-9H-STO" secondAttribute="bottom" constant="20" id="iEm-0s-AYJ"/>
                             <constraint firstItem="TR2-Nj-2ph" firstAttribute="leading" secondItem="qfh-Q3-3IP" secondAttribute="leading" id="pyV-SZ-e6V"/>
+<<<<<<< HEAD
                             <constraint firstItem="PHs-9H-STO" firstAttribute="centerX" secondItem="qfh-Q3-3IP" secondAttribute="centerX" id="ysr-q2-hRR"/>
+=======
+=======
+                            <constraint firstItem="PHs-9H-STO" firstAttribute="leading" secondItem="eVR-P4-vE6" secondAttribute="leading" constant="30" id="1J7-RN-OK8"/>
+                            <constraint firstItem="eVR-P4-vE6" firstAttribute="bottom" secondItem="iGx-1O-ydl" secondAttribute="bottom" constant="74" id="JfL-fX-aZF"/>
+                            <constraint firstItem="iGx-1O-ydl" firstAttribute="leading" secondItem="eVR-P4-vE6" secondAttribute="leading" constant="86" id="NJp-Ky-aQs"/>
+                            <constraint firstItem="TR2-Nj-2ph" firstAttribute="centerX" secondItem="iGx-1O-ydl" secondAttribute="centerX" id="PV3-P7-zrn"/>
+                            <constraint firstItem="iGx-1O-ydl" firstAttribute="top" secondItem="PHs-9H-STO" secondAttribute="bottom" constant="7" id="Qps-bd-wbK"/>
+                            <constraint firstItem="TR2-Nj-2ph" firstAttribute="top" secondItem="eVR-P4-vE6" secondAttribute="top" id="XD9-je-fb3"/>
+                            <constraint firstItem="eVR-P4-vE6" firstAttribute="trailing" secondItem="PHs-9H-STO" secondAttribute="trailing" constant="30" id="hbi-0x-PzQ"/>
+                            <constraint firstItem="TR2-Nj-2ph" firstAttribute="leading" secondItem="qfh-Q3-3IP" secondAttribute="leading" id="l5Z-e3-RtE"/>
+                            <constraint firstItem="PHs-9H-STO" firstAttribute="top" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="10" id="mFM-6P-Yjo"/>
+                            <constraint firstItem="TR2-Nj-2ph" firstAttribute="centerX" secondItem="PHs-9H-STO" secondAttribute="centerX" id="nAb-bk-5bO"/>
+                            <constraint firstAttribute="bottom" secondItem="TR2-Nj-2ph" secondAttribute="bottom" constant="344" id="p8a-Vy-twi"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
                             <constraint firstItem="TR2-Nj-2ph" firstAttribute="trailing" secondItem="eVR-P4-vE6" secondAttribute="trailing" id="ztk-du-TWj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eVR-P4-vE6"/>
@@ -409,6 +655,7 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="btn_like_default" width="110" height="45"/>
         <image name="btn_like_selected" width="110" height="45"/>
         <image name="tab bar 1" width="25" height="25"/>
@@ -416,6 +663,17 @@
         <image name="비활성화된 헬강" width="211" height="50"/>
         <image name="활성화된 꿀강" width="211" height="50"/>
         <image name="활성화된 헬강" width="211" height="50"/>
+=======
+<<<<<<< HEAD
+        <image name="BACKGROUND" width="220" height="90"/>
+        <image name="btn_like_selected" width="256" height="256"/>
+        <image name="비활성화된 헬강" width="211" height="50"/>
+        <image name="활성화된 꿀강" width="211" height="50"/>
+=======
+        <image name="btn_like_default" width="640" height="320"/>
+        <image name="btn_like_selected" width="960" height="480"/>
+>>>>>>> parent of 8fca1cd... 디자인 완료- 파이널 수정 필요
+>>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="p4n-o9-eZu"/>
