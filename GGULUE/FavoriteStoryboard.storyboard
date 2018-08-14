@@ -101,13 +101,8 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="btn_addTimeTable_add" width="256" height="256"/>
         <image name="btn_addTimeTable_delete" width="256" height="256"/>
         <image name="tab bar 2" width="25" height="25"/>
-=======
-        <image name="btn_addTimeTable_add" width="64" height="64"/>
-        <image name="btn_addTimeTable_delete" width="64" height="64"/>
->>>>>>> fa341651610babbb04b734b89a0ba0f837267b3f
     </resources>
 </document>
